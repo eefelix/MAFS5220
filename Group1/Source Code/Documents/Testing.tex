@@ -1,0 +1,100 @@
+\section{Testing}\label{sec:testing}
+
+The project will have three levels of testing C unit test, system/integration (combined) test, and acceptance test. The details for each level are addressed in the approach section.
+The estimated time line for this project is very aggressive (five (5) months), as such, any delays in the development process or in the installation and verification of the third party software could have significant effects on the test plan. 
+
+\subsection{Software Risk Issues}
+
+There are several parts of the project that are not within the control of the Risk Analysis
+Tool application but have direct impacts on the process and must be checked as
+well.
+\begin{itemize}
+  \item The computation engine depends on third-party data, which we use for cross validation
+and model calibration.
+  \item The application service is deployed on Windows Azure cloud environment.
+  \item The client application is based on the Xamarin framework, which enables the crossplatform
+development for mobile application.
+\end{itemize}
+
+\subsection{Items Will and Will Not be Tested}
+
+The following is a list of areas to be focused on during testing of the application.
+\begin{itemize}
+  \item Kou jump process
+  \item Kou process calibrator
+  \item AT1P default model
+  \item AT1P model calibrator
+  \item CIR process calibrator
+  \item Pricing engine for Equity Swap
+  \item Pricing engine for European option using Kou model
+  \item Credit VaR engine for IRS, Equity Swap and FX Swap
+  \item CVA and DVA engine for IRS, Equity Swap and FX Swap
+  \item FVA engine for IRS, Equity Swap and FX Swap
+  \item Android mobile application for calling the application service
+\end{itemize}
+
+The following items are implemented in third party libraries and framework. We
+assume they are correctly implemented unless we find bugs affecting us.
+\begin{itemize}
+  \item Geometric Brownian Motion process
+  \item CIR process
+  \item Pricing engine using Black-Scholes model
+  \item Risk-free pricing engine for IRS
+  \item Risk-free pricing engine for FX Swap
+  \item Term-structures
+  \item Monte Carlo simulation
+  \item Calibration framework
+  \item Web API framework that handling Web service call
+  \item Xamarin GUI framework for mobile application
+\end{itemize}
+
+\subsection{Testing Levels}
+
+The testing for the will consist of unit, system/integration (combined) and acceptance test levels, plus the bug regression tests. It was hoped that there would be a full time independent person for system/integration testing, and involve target users for participating the acceptance testing. However, with constraints and time line established,
+most testing will be done by the development teams participation.
+
+\textbf{Unit testing} will be done by the developer. Proof of unit testing (test case list, sample output, data printouts, and defect information) must be provided by the programmer
+All unit tests must be automated. 
+
+\textbf{System/integration} testing will be performed by the development team. No specific test tools are available for this project. Programs will enter into System/Integration test after all critical defects have been corrected. A program may have defects as long as they do not impede testing of the program (i.e., there is a work around for the error).
+
+\textbf{Acceptance testing} will be performed by the development team in users perspective and by volunteering class peers from other groups. The acceptance test will be done in parallel with the development process for a period of two weeks after completion of the system/integration test process. The application will enter alpha state and enter into acceptance test after all critical and major defects have been corrected. A program may have minor defect as long as it does not impede the functionality of the program (i.e., there is a work around for the error). Prior to final completion and sign-off of acceptance testing all open critical and major defects must be corrected and verified. After the sign-off, the application will enter beta state for public feedbacks.
+
+In addition, in case of any bugs found in the application, an automated \textbf{bug regression test} must be created to reproduce the bug. After the bug has been fixed, the regression test case will be included in the unit test collection to prevent reintroducing the bug again.
+
+\subsection{Unit Testing}
+
+The granularity of the unit testing is functions of each class developed by the development team. The unit test collection must cover 100\% of the functions and 80\% of the
+code lines. For each function, there should be test cases scenarios shown below:
+
+\textbf{Normal case:} for all functions, with normal input, the output of the function is correct.
+A core function should usually be covered by unit tests with all typical scenarios.
+The expected output should come from third-party source (e.g., research papers, books,
+etc.). If third-party source is not available, the expected output should come from
+independent form the spreadsheet calculation.
+
+\textbf{Reduced case:} if the input that reduce the case to a simplified case which has wellknown
+results, the function will output the well-known result.
+
+\textbf{Extreme case:} for functions with public interface, with extreme input value, the
+output of the function is consistent. Error case: for functions with public interface,
+with error input, the function should give error message
+
+\subsection{System/Integration Testing}
+
+The system/integration test verify the correctness of the application in an end-to-end approach. The granularity of the test case is the use case. For each feature, system/integration testing should cover below scenarios:
+
+\textbf{Normal scenario:} when a typical input is given, the correct output should be provided
+by the application.
+
+\textbf{Error case:} when the input is incorrect, the error message should be provided indicating
+the error. The application must not crash in error case.
+
+\textbf{Extreme scenario:} depending on the requirement of the use case, treat it either as
+normal input or error input.
+
+\subsection{Acceptance Testing}
+
+The acceptance testing tests the features and use cases in end-users perspective. It covers similar scenarios as system/integration testing. 
+
+Besides correctness, the acceptance testing also include a reasonably satisfactory user experience, i.e., for most users with necessary domain knowledge, they should be able to use the application with reasonable degree of training.

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:vm="clr-namespace:RiskAnalysisTool.MobileApp.ViewModels;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:labs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="RiskAnalysisTool.MobileApp.Views.BondDetailView"
+             Title="Zero-Coupon Bond">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Order="Primary" Priority="0" Text="Save" Command="{Binding SaveCommand}" />
+  </ContentPage.ToolbarItems>
+
+  <TableView Intent="Form">
+
+    <TableSection Title="Symbols">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Symbol:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Symbol}" Keyboard="Text" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+    <TableSection Title="Bond Term">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Maturity:" />
+          <DatePicker HorizontalOptions="FillAndExpand" Date="{Binding Maturity}" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+    <TableSection Title="Market Quote">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}" IsVisible="{Binding IncludeMarketQuote}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Price (100 par):" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Price}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+  </TableView>
+</ContentPage>

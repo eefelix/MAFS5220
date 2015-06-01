@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ql\math\randomnumbers\fakeuniformrng.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ql\processes\kouprocesstests.cpp" />
+    <ClCompile Include="ql\pricingengines\vanilla\analytickoueuropeanenginetests.cpp" />
+    <ClCompile Include="ql\sanitytests.cpp">
+      <Filter>QuantLib</Filter>
+    </ClCompile>
+    <ClCompile Include="KouCalibratorTest.cpp" />
+    <ClCompile Include="AT1PProcessVarianceCurveBugTest.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\boost_system.error_code.cpp" />
+    <ClCompile Include="AT1PProcessVarianceCurveBugTest.cpp" />
+    <ClCompile Include="ql\patterns\session.cpp" />
+    <ClCompile Include="CVarTest.cpp" />
+    <ClCompile Include="AT1PTest.cpp" />
+    <ClCompile Include="ccstest.cpp" />
+    <ClCompile Include="EquitySwaptest.cpp" />
+    <ClCompile Include="IRSBVATest.cpp" />
+    <ClCompile Include="cirmodeltest.cpp" />
+    <ClCompile Include="fundingspreadtest.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\boost_chrono.chrono.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\boost_chrono.process_cpu_clocks.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\boost_chrono.thread_clock.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gregorian\boost_date_time.gregorian.date_generators.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gregorian\boost_date_time.gregorian.gregorian_types.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gregorian\boost_date_time.gregorian.greg_month.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gregorian\boost_date_time.gregorian.greg_weekday.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\posix_time\boost_date_time.posix_time.posix_time_types.cpp" />
+    <ClCompile Include="IRSTVATest.cpp" />
+    <ClCompile Include="IRSCVATest.cpp" />
+    <ClCompile Include="IRSCVarTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="QuantLib">
+      <UniqueIdentifier>{b06bd29e-bfa3-41ce-8319-ccf7fed03e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Processes">
+      <UniqueIdentifier>{fd3c3f72-0e85-434a-908b-63eff44401cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost">
+      <UniqueIdentifier>{597339a1-932c-445b-93eb-9c02d045054a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

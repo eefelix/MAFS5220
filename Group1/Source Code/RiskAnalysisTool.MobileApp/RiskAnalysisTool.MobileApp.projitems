@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b04528de-f756-4790-a7ae-30c0637382db</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RiskAnalysisTool.MobileApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\PickerEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\InstrumentSummaryConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\InstrumentTitleConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\AsyncCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\FunctionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\ModelViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\PageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\ServiceHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\ViewModelExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BondDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CorrelationDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CreditDefaultSwapDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\InstrumentDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VolatilityDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CrossCurrencySwapDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EquitySwapDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\InterestRateSwapDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MarketDataListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskSettingsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreditDefaultSwapDetailView.xaml.cs">
+      <DependentUpon>CreditDefaultSwapDetailView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TaskDetailView.xaml.cs">
+      <DependentUpon>TaskDetailView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MarketDataListView.xaml.cs">
+      <DependentUpon>MarketDataListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PortfolioView.xaml.cs">
+      <DependentUpon>PortfolioView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TaskSettingsView.xaml.cs">
+      <DependentUpon>TaskSettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BondDetailView.xaml.cs">
+      <DependentUpon>BondDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PortfolioViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VolatilityDetailView.xaml.cs">
+      <DependentUpon>VolatilityDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CorrelationDetailView.xaml.cs">
+      <DependentUpon>CorrelationDetailView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\InterestRateSwapDetailView.xaml.cs">
+      <DependentUpon>InterestRateSwapDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CrossCurrencySwapDetailView.xaml.cs">
+      <DependentUpon>CrossCurrencySwapDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EquitySwapDetailView.xaml.cs">
+      <DependentUpon>EquitySwapDetailView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TaskDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\BondDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\VolatilityDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CorrelationDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\InterestRateSwapDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CrossCurrencySwapDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EquitySwapDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MarketDataListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PortfolioView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CreditDefaultSwapDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TaskSettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

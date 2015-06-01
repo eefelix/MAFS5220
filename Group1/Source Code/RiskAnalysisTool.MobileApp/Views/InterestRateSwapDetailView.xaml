@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:vm="clr-namespace:RiskAnalysisTool.MobileApp.ViewModels;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:labs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="RiskAnalysisTool.MobileApp.Views.InterestRateSwapDetailView"
+             Title="Interest Rate Swap">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Order="Primary" Priority="0"
+                 Text="Save" Command="{Binding SaveCommand}" />
+  </ContentPage.ToolbarItems>
+    <TableView Intent="Form">
+      <TableSection Title="Swap Term">
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Start:" />
+            <DatePicker HorizontalOptions="FillAndExpand" Date="{Binding StartDate}" />
+          </StackLayout>
+        </ViewCell>
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Maturity:" />
+            <DatePicker HorizontalOptions="FillAndExpand" Date="{Binding MaturityDate}" />
+          </StackLayout>
+        </ViewCell>
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Nominal:" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Nominal}" Keyboard="Numeric" />
+          </StackLayout>
+        </ViewCell>
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Pay Floating" />
+            <Switch HorizontalOptions="EndAndExpand" IsToggled="{Binding IsPayFloating}" />
+          </StackLayout>
+        </ViewCell>
+      </TableSection>
+
+      <TableSection Title="Fixed Leg">
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Rate:" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding FixedRate}" Keyboard="Numeric" />
+          </StackLayout>
+        </ViewCell>
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Frequency (months):" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding FixedFrequency}" Keyboard="Numeric" />
+          </StackLayout>
+        </ViewCell>
+      </TableSection>
+
+      <TableSection Title="Floating Leg">
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Spread:" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding FloatingSpread}" Keyboard="Numeric" />
+          </StackLayout>
+        </ViewCell>
+        <ViewCell>
+          <StackLayout Style="{StaticResource EntryStackLayout}">
+            <Label Style="{StaticResource EntryLabelText}" Text="Frequency (months):" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding FloatingFrequency}" Keyboard="Numeric" />
+          </StackLayout>
+        </ViewCell>
+      </TableSection>
+
+    </TableView>
+</ContentPage>

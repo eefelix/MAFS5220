@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Calculation\Sample\SampleClass.cpp">
+      <Filter>Calculation\Sample</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ql\processes\kouprocess.cpp">
+      <Filter>ql\processes</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\processes\jcirprocess.cpp">
+      <Filter>ql\processes</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculation\ComputeEngine.cpp" />
+    <ClCompile Include="ql\calibration\kouprocesscalibrator.cpp" />
+    <ClCompile Include="ql\credit\creditvar\creditvarengine.cpp" />
+    <ClCompile Include="ql\instruments\swap\equityswap.cpp" />
+    <ClCompile Include="ql\patterns\session.cpp">
+      <Filter>ql</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\instruments\swap\crosscurrengyswap.cpp" />
+    <ClCompile Include="ql\pricingengines\ucva\analyticeuropeanucvaengine.cpp" />
+    <ClCompile Include="ql\pricingengines\ucva\simvanillaswapucvaengine.cpp" />
+    <ClCompile Include="ql\processes\cirprocess.cpp" />
+    <ClCompile Include="ql\pricingengines\swap\analyticequityswapengine.cpp" />
+    <ClCompile Include="ql\models\default\at1pdefaultmodel.cpp" />
+    <ClCompile Include="ql\models\default\cirdefaultmodel.cpp" />
+    <ClCompile Include="ql\models\default\deterministicdefaultmodel.cpp" />
+    <ClCompile Include="ql\models\equity\koumodel.cpp" />
+    <ClCompile Include="ql\models\equity\calibrationhelpers\koucalibrationhelper.cpp" />
+    <ClCompile Include="ql\pricingengines\cirbondengine.cpp" />
+    <ClCompile Include="ql\models\shortratetermstructure.cpp" />
+    <ClCompile Include="ql\models\shortrate\calibrationhelpers\zerocouponbondhelper.cpp" />
+    <ClCompile Include="ql\models\defaultcdshelper.cpp" />
+    <ClCompile Include="ql\credit\counterparty.cpp" />
+    <ClCompile Include="ql\pricingengines\ucva\mccrosscurrencyswapucvaengine.cpp" />
+    <ClCompile Include="ql\pricingengines\ucva\mcequityswapucvaengine.cpp" />
+    <ClCompile Include="ql\pricingengines\ucva\mcvanillaswapucvaengine.cpp" />
+    <ClCompile Include="ql\pricingengines\swap\simequityswapengine.cpp" />
+    <ClCompile Include="ql\pricingengines\vanilla\analytickoueuropeanengine.cpp">
+      <Filter>ql\pricingengines\vanilla</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculation\Utilities\DynamicVisitor.cpp" />
+    <ClCompile Include="Calculation\InstrumentFactory.cpp" />
+    <ClCompile Include="Calculation\ModelFactory.cpp" />
+    <ClCompile Include="Calculation\PortfolioManagerFactory.cpp" />
+    <ClCompile Include="Calculation\EngineFactory.cpp" />
+    <ClCompile Include="Calculation\CounterpartyFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\boost_system.error_code.cpp" />
+    <ClCompile Include="ql\pricingengines\credit\mcvanillaswapexposuremodel.cpp" />
+    <ClCompile Include="ql\pricingengines\credit\mcequityswapexposuremodel.cpp" />
+    <ClCompile Include="ql\pricingengines\credit\mccrosscurrencyswapexposuremodel.cpp" />
+    <ClCompile Include="Calculation\Product.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Utilities.hpp" />
+    <ClInclude Include="Calculation\Sample\SampleClass.hpp">
+      <Filter>Calculation\Sample</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\processes\jcirprocess.hpp">
+      <Filter>ql\processes</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\processes\kouprocess.hpp">
+      <Filter>ql\processes</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculation\Calculation.h">
+      <Filter>Calculation</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\calibration\kouprocesscalibrator.hpp" />
+    <ClInclude Include="ql\credit\creditvar\creditvarengine.hpp" />
+    <ClInclude Include="ql\instruments\swap\equityswap.hpp" />
+    <ClInclude Include="ql\methods\montecarlo\multivaluemctraits.hpp" />
+    <ClInclude Include="ql\math\statistics\arraystatistics.hpp" />
+    <ClInclude Include="ql\pricingengines\ucvaengine.hpp" />
+    <ClInclude Include="ql\instruments\swap\crosscurrencyswap.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\analyticeuropeanucvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\simvanillaswapucvaengine.hpp" />
+    <ClInclude Include="ql\calibration\extended.hpp" />
+    <ClInclude Include="ql\credit\extended.hpp" />
+    <ClInclude Include="ql\instruments\swap\extended.hpp" />
+    <ClInclude Include="ql\instruments\extended.hpp" />
+    <ClInclude Include="ql\math\statistics\extended.hpp" />
+    <ClInclude Include="ql\math\extended.hpp" />
+    <ClInclude Include="ql\methods\montecarlo\extended.hpp" />
+    <ClInclude Include="ql\methods\extended.hpp" />
+    <ClInclude Include="ql\pricingengines\extended.hpp" />
+    <ClInclude Include="ql\pricingengines\swap\extended.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\extended.hpp" />
+    <ClInclude Include="ql\pricingengines\vanilla\extended.hpp" />
+    <ClInclude Include="ql\processes\cirprocess.hpp" />
+    <ClInclude Include="ql\processes\extended.hpp" />
+    <ClInclude Include="ql\extended.hpp" />
+    <ClInclude Include="ql\pricingengines\swap\analyticequityswapengine.hpp" />
+    <ClInclude Include="ql\pricingengines\exactsimulation.hpp" />
+    <ClInclude Include="ql\models\default\at1pdefaultmodel.hpp" />
+    <ClInclude Include="ql\models\default\cirdefaultmodel.hpp" />
+    <ClInclude Include="ql\models\default\deterministicdefaultmodel.hpp" />
+    <ClInclude Include="ql\models\defaultmodel.hpp" />
+    <ClInclude Include="ql\models\equity\koumodel.hpp" />
+    <ClInclude Include="ql\models\equity\calibrationhelpers\koucalibrationhelper.hpp" />
+    <ClInclude Include="ql\pricingengines\cirbondengine.hpp" />
+    <ClInclude Include="ql\models\shortratetermstructure.hpp" />
+    <ClInclude Include="ql\models\shortrate\calibrationhelpers\zerocouponbondhelper.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\mcucvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\ucvapathpricer.hpp" />
+    <ClInclude Include="ql\pricingengines\creditvarengine.hpp" />
+    <ClInclude Include="ql\models\defaultcdshelper.hpp" />
+    <ClInclude Include="ql\credit\counterparty.hpp" />
+    <ClInclude Include="ql\credit\counterparties\extended.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\mccrosscurrencyswapucvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\mcequityswapucvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\ucva\mcvanillaswapucvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\swap\simequityswapengine.hpp" />
+    <ClInclude Include="ql\pricingengines\vanilla\analytickoueuropeanengine.hpp">
+      <Filter>ql\pricingengines\vanilla</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\models\exposuremodel.hpp" />
+    <ClInclude Include="ql\instruments\credit\extended.hpp" />
+    <ClInclude Include="ql\instruments\credit\bva.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mccreditvarengine.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\creditvarpathpricer.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\tvaengine.hpp" />
+    <ClInclude Include="ql\instruments\credit\tva.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\tvapathpricer.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mctvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\bvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\bvapathpricer.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mcbvaengine.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\creditvarengine.hpp" />
+    <ClInclude Include="ql\instruments\credit\var.hpp" />
+    <ClInclude Include="Calculation\Utilities\DynamicVisitor.hpp" />
+    <ClInclude Include="Calculation\Utilities\DateHelper.hpp" />
+    <ClInclude Include="Calculation\InstrumentFactory.hpp" />
+    <ClInclude Include="Calculation\ModelFactory.hpp" />
+    <ClInclude Include="Calculation\PortfolioManagerFactory.hpp" />
+    <ClInclude Include="Calculation\EngineFactory.hpp" />
+    <ClInclude Include="Calculation\CounterpartyFactory.hpp" />
+    <ClInclude Include="Calculation\Utilities\cli_unique_ptr.hpp" />
+    <ClInclude Include="Calculation\Utilities\cliext.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mcexposuremodel.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mcvanillaswapexposuremodel.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mcequityswapexposuremodel.hpp" />
+    <ClInclude Include="ql\pricingengines\credit\mccrosscurrencyswapexposuremodel.hpp" />
+    <ClInclude Include="Calculation\Product.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ql">
+      <UniqueIdentifier>{c27f8f3e-29a9-4430-883d-c7117156155c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation">
+      <UniqueIdentifier>{c381ac51-b459-460f-b840-ffe668c5cb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql\processes">
+      <UniqueIdentifier>{0e8b3ec4-f0b3-4259-b599-5ebca3e634d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql\pricingengines">
+      <UniqueIdentifier>{d39e05b1-a8db-42f7-8825-12541dc104e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql\termstructures">
+      <UniqueIdentifier>{68f32e5d-9484-484c-a2b2-0d2180a27182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql\termstructures\credit">
+      <UniqueIdentifier>{a885a252-0b8c-4f6f-8a13-fc355b8f37ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql\pricingengines\vanilla">
+      <UniqueIdentifier>{ed4db9f8-a00a-4bd2-90c0-3bd021509792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation\MarketRisk">
+      <UniqueIdentifier>{20885a5f-4050-4588-a8fe-6d9e9b40e75e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation\CreditRisk">
+      <UniqueIdentifier>{4823178d-a33e-4649-85ff-0690fbd9685c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation\Sample">
+      <UniqueIdentifier>{b8889062-8536-455d-a5b9-da2ae68e6fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation\CreditRisk\UCVA">
+      <UniqueIdentifier>{cffa2178-fcea-4b12-b2eb-f5bc79b07188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation\CreditRisk\Counterparty">
+      <UniqueIdentifier>{0808f6e6-3bb1-400e-9e79-1c20b6e781f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calculation\CreditRisk\BCVA">
+      <UniqueIdentifier>{92a501cc-80ea-4492-9e7d-5fac5447098e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boost">
+      <UniqueIdentifier>{71797594-4407-4f4b-b689-e89f168fe549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

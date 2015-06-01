@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:vm="clr-namespace:RiskAnalysisTool.MobileApp.ViewModels;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:labs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="RiskAnalysisTool.MobileApp.Views.CreditDefaultSwapDetailView"
+             Title="Credit Default Swap">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Order="Primary" Priority="0" Text="Save" Command="{Binding SaveCommand}" />
+  </ContentPage.ToolbarItems>
+
+  <TableView Intent="Form">
+    <TableSection Title="Symbols">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Counterparty Symbol:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Symbol}" Keyboard="Text" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+    <TableSection Title="Credit Default Swap Term">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Tenor (months)):" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Tenor}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Frequency (months):" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Frequency}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+    <TableSection Title="Market Quote">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}" IsVisible="{Binding IncludeMarketQuote}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Spread:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Spread}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+  </TableView>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:vm="clr-namespace:RiskAnalysisTool.MobileApp.ViewModels;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:labs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="RiskAnalysisTool.MobileApp.Views.VolatilityDetailView"
+             Title="Implied Volatility">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Order="Primary" Priority="0" Text="Save" Command="{Binding SaveCommand}" />
+  </ContentPage.ToolbarItems>
+
+  <TableView Intent="Form">
+    
+    <TableSection Title="Symbols">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Symbol:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Symbol}" Keyboard="Text" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+    
+    <TableSection Title="Volatility">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Value:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Volatility}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+
+  </TableView>
+</ContentPage>

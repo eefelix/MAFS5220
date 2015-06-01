@@ -1,0 +1,1542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3019d465-e72c-42d5-a243-8e4b2eb62db9" name="RiskAnalysisTool.Calculation" linkedPackageId="21aabf56-578c-4d89-8070-39d80444fe42" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="b40d9df5-8d9e-41c4-912b-1c36ef7de769" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="91692ba2-321f-4448-a133-10dc25f4ea6c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aabc538f-9930-4df8-91ec-ab017b19e014">
+          <propertyInstance Id="7bc45652-4d2d-47b7-a1e0-ffb5acfe66a7" name="BaseName">
+            <elementDefinition Id="bbe005b4-cf0b-4d23-8993-c82e8622a2b5" />
+          </propertyInstance>
+          <elementDefinition Id="c9c84889-9fd6-4212-803b-bd1e985c8560" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b2680c22-ad5e-4d00-a009-a9b84ae06f09">
+          <propertyInstance Id="20723b54-cdb8-4b18-88c4-ae23b8f59f0b" name="ClrAttributes">
+            <elementDefinition Id="eb96d5f2-e227-476a-a01a-67bfb72876d2" />
+          </propertyInstance>
+          <elementDefinition Id="9257e677-5d6d-4b37-9493-116d1e4d8f8b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="61ea5f04-b9f6-47b3-ba6b-fa3db504f796">
+          <propertyInstance Id="970ecb70-3786-443c-b88e-404474c4dba0" name="Usings">
+            <elementDefinition Id="41802a7e-b3d4-4c3c-87bd-68e899ad3c8d" />
+          </propertyInstance>
+          <elementDefinition Id="83dd38d9-2eac-4fb5-b863-2c36f3eb3b8e" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="754f5ed9-455c-47cf-bebc-bebee4698550" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="a0a2ecc8-fb90-4e88-aa3f-f58bf48bd9b9" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="576c9897-c060-4c3a-8b78-d0ba9b587fee">
+          <propertyInstance Id="663358eb-8402-4d80-a80c-ca8a23f092a8" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="28e051a2-dc7f-4fab-aee9-3a13a9972613" />
+          </propertyInstance>
+          <elementDefinition Id="8b15ac76-6de2-4ac6-906d-09ac29fbb251" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4a4f2258-218c-43b7-b4c8-f8b61afb009e">
+          <propertyInstance Id="c42e7d88-98b1-419a-8e1d-38c12ee37b9e" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="5bc56c4c-1a62-4dcf-a346-e4aa7420569d" />
+          </propertyInstance>
+          <elementDefinition Id="fb973c95-ef21-489e-90b6-0ffa7c1e244c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e7f4e118-f540-4d12-8ac6-a60fd8b679e8">
+          <propertyInstance Id="e1a8f72b-b905-4c15-9f29-b866a7f3fc7b" name="ProjectPath" value="ClassTemplate=..\RiskAnalysisTool.CalculationLib\RiskAnalysisTool.CalculationLib.csproj|EnumTemplate=..\RiskAnalysisTool.CalculationLib\RiskAnalysisTool.CalculationLib.csproj|InterfaceTemplate=..\RiskAnalysisTool.CalculationLib\RiskAnalysisTool.CalculationLib.csproj|StructTemplate=..\RiskAnalysisTool.CalculationLib\RiskAnalysisTool.CalculationLib.csproj">
+            <elementDefinition Id="2340088f-f3c8-4e76-ae0e-1a9cb9cc9a6a" />
+          </propertyInstance>
+          <elementDefinition Id="ac6f8ac1-49bd-47e4-aeda-d8592341666f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d7a8350f-14a3-451d-9c3b-bdf98e97b488">
+          <propertyInstance Id="c605b7da-9d53-4881-b27a-cb08d4b5cfde" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="37f28675-78da-4960-ad0f-fe9250948196" />
+          </propertyInstance>
+          <elementDefinition Id="3744bee6-8bdc-40b8-a8f8-1450f7397837" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2130f74a-fee5-499b-b102-e1dcb945c29e">
+          <propertyInstance Id="2beb9b43-ecae-439e-a0bf-e38c8adbaed6" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="f6e68937-fb0c-4259-a77b-6ebeccf0151b" />
+          </propertyInstance>
+          <elementDefinition Id="c9de6d9b-f3b5-45a9-a32d-96ff66538acb" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="92c1d081-d74a-4fc0-8d7b-7e6ba181a416">
+          <propertyInstance Id="6957657a-6ab8-4b8d-afb9-eb359d77fe96" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="5931c004-383a-46a2-bab8-0086f93de3b9" />
+          </propertyInstance>
+          <elementDefinition Id="a639920f-6c1d-4dfa-b1be-3b027cf0feff" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="da00fb74-03c2-43a2-a980-f1b013ae5b74">
+          <propertyInstance Id="e8cb03f9-1845-4454-a769-92b911f4e742" name="Parameters">
+            <elementDefinition Id="609fd3f1-1634-4f90-8549-51237d0bbb43" />
+          </propertyInstance>
+          <elementDefinition Id="b58b127d-b70c-4c46-89dd-d7ba32d2ee16" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="10efadca-6b12-4ac3-a63c-1fa2ebc18ba8" name="BVAEngine&lt;INST&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="05ce5aba-2c11-4c44-851f-43ee62c60d7b" />
+        <generalsInternal>
+          <generalization Id="08501887-e6d0-49a4-b0e0-6b146ebbd06d" isSubstitutable="false">
+            <classMoniker Id="13f0a6bf-d64c-4c33-a029-10921690090b" LastKnownName="INST::engine" />
+            <elementDefinition Id="431888bf-bed0-41b6-8ab1-2e02039f48c9" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="1cabbe3a-b8c4-4dc6-85cd-857135326096" parameters="" isLeaf="false">
+            <elementDefinition Id="86ba95c8-bfca-40e1-b2d1-9680cbb16a40" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="d53c743f-9bac-4046-958b-16d045b1dbbd">
+                <elementDefinition Id="06507683-4f17-47b5-925b-bf0f76b04f82" />
+                <ownedParameterableElement>
+                  <class Id="ade1c21b-a14b-4b34-8500-a7653202e33c" name="INST" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="e58fd6f9-a783-41ea-90b2-f426d8324eca" />
+                  </class>
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <referencedTypeMoniker Id="c3a567e2-4d35-4ea2-80cc-5f2b50d38edd" LastKnownName="Instrument" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property Id="3a486ce7-0f68-4db5-989c-27f28451ddb4" name="issuer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6190cc27-d410-4374-b7b2-d52816e5eed1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="deb0454b-6459-472f-8127-23784e0480b6" LastKnownName="Counterparty" />
+            </type_NamedElement>
+          </property>
+          <property Id="9fbe3fd1-3391-4792-867d-460f0a051602" name="invester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e6f9b99-bb64-4f4e-a24d-8fcbdc92246d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="65d5eb70-6fe2-47b8-9f37-31a460356b94" LastKnownName="Counterparty" />
+            </type_NamedElement>
+          </property>
+          <property Id="70bde07e-fe4d-43f0-8a77-6f66235b031d" name="instrument" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54ef1408-db1d-4b6c-820d-42fbba9a2fc9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a05b9d7c-1008-4fae-ba79-43dab18f80d4" LastKnownName="INST" />
+            </type_NamedElement>
+          </property>
+          <property Id="86c8c3b5-0064-4d74-b441-11ef3ca3f163" name="discountCurve" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0b1b6389-dc66-42e1-a8e8-f79267b7ce36" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="df7d53fa-92e7-4a9d-bcf0-eb922726c56d" LastKnownName="YieldTermStructure" />
+            </type_NamedElement>
+          </property>
+          <property Id="709f66bf-5247-432a-9433-207783cea3c3" name="endTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0d9ff5ac-6250-4724-84bb-97ac55f08a54" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="71b4b134-408c-498d-a24f-ba64c4eb6235" name="calculate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8c08efc0-d730-470b-ac1c-e2dffded507d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="14dd9007-1193-4070-8086-bd943c9dcd95" direction="Return" isUnique="false">
+                  <elementDefinition Id="6ceaa327-694a-42f5-a9a6-3ed0f071dff1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a05b9d7c-1008-4fae-ba79-43dab18f80d4" name="INST" isAbstract="false" isLeaf="false" cachedFullName="INST">
+        <elementDefinition Id="e58fd6f9-a783-41ea-90b2-f426d8324eca" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c3a567e2-4d35-4ea2-80cc-5f2b50d38edd" name="Instrument" isAbstract="false" isLeaf="false" cachedFullName="RiskAnalysisTool.Calculation::Instrument">
+        <elementDefinition Id="d5e4e429-b3b4-428a-b5c5-a53540e202c9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df7d53fa-92e7-4a9d-bcf0-eb922726c56d" name="YieldTermStructure" isAbstract="false" isLeaf="false" cachedFullName="YieldTermStructure">
+        <elementDefinition Id="42e5b198-7c15-4f9f-ae35-6b6812c1f85e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a7131aff-c249-44b2-b668-2abb85334bec" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
+        <elementDefinition Id="2a75e1f2-9fdc-4739-bcb9-2905324e545f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0e62f3f1-169d-4957-b1a6-6be320e80339" name="Counterparty" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8a67ed80-b46c-4d49-8699-e737bdcbe623" />
+        <ownedAttributesInternal>
+          <property Id="c9f22e40-a0d4-4c96-9565-eaa0b6c10d5b" name="defaultModel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3c1e1675-a247-4a32-aa06-d03aa6c350bb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7a19d8fc-f122-408e-b6e6-4c08431559de" LastKnownName="DefaultModel" />
+            </type_NamedElement>
+          </property>
+          <property Id="7286b643-a4a6-432e-9bdd-2f33b4359e3f" name="referenceDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2f86b8b5-8e50-47c9-a948-788c44207be6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b703fb0a-1fbc-4676-b46f-d7c45ff574f3" LastKnownName="Date" />
+            </type_NamedElement>
+          </property>
+          <property Id="4d811222-d642-432d-8833-65f32969d966" name="discountCurve" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af8bdd05-7df7-419d-b57c-11cd449b1a9a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="df7d53fa-92e7-4a9d-bcf0-eb922726c56d" LastKnownName="YieldTermStructure" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="82e7e0fa-18cb-4702-8c42-ccf726a5a5c3" name="defaultProbability" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5359a965-e5d0-4900-a6ae-7f98eec53a5c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c6ff2372-eba7-4815-b432-74e815986fa6" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="5ee9e32c-65f0-4e32-9e2b-99a397d7ee41" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d8e63457-744f-4f90-adfc-caa7ff018033" direction="Return" isUnique="false">
+                  <elementDefinition Id="47fd63e6-c159-4e58-b14d-95efbbb2f555" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59c72156-cedb-430f-bd44-db86ccbb41c3" LastKnownName="Probability" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f631ec56-708c-48cc-9a20-acb3530a4606" name="defaultTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="613c34af-ce36-4e02-8282-57116b75114a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="91e30985-c97e-45de-ae9f-ebf2dee4f7a3" name="path" direction="In" isUnique="false">
+                  <elementDefinition Id="72f04a9d-98a4-401b-b9e9-23fb6a94230e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="981dc650-604d-463c-ba05-d75671285590" LastKnownName="Path" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0e80bc6d-171d-43a1-95f1-4899068e8cd9" direction="Return" isUnique="false">
+                  <elementDefinition Id="c690b080-0934-4a32-b31b-437dd2e2d62e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="dd77bf3a-90bc-4ddf-8e49-0b4fb539104a" name="process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="da77ef01-78d4-4dff-8226-fc3856cc906b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="504e819c-d2c6-470c-a313-1ea78e7ff8d3" direction="Return" isUnique="false">
+                  <elementDefinition Id="f38fd8f4-32d0-451d-a9c8-075b9c37e473" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3febb89-454e-47e3-a535-a4f70b17a5c9" LastKnownName="StochasticProcess1D" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="33c2c308-3da3-400d-b595-e1dd7ae074a7" name="recoveryRate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="50c330be-c5e3-419c-8459-0d10e5686175" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1ccac213-c355-4b95-ab9a-7a1e43a2ced3" direction="Return" isUnique="false">
+                  <elementDefinition Id="c539cb99-c060-4142-a7ed-3b621c745410" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3f693a2d-bb7f-41aa-be4d-db741069001b" name="modelCalibrate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ceeee20b-e4e7-49a3-8dd7-05a44aca1402" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e3eb989a-a95f-439e-8b54-55dc5fbb7224" name="..." direction="In" isUnique="false">
+                  <elementDefinition Id="ebd7e975-1451-427f-8ecd-6db468723a8d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="464de8f7-bdfd-48dd-814c-1e91c1822125" direction="Return" isUnique="false">
+                  <elementDefinition Id="a500b0f9-bf63-40bd-95e9-8f1cc5074081" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c62b628d-a604-40fe-916f-d89b4f978fe2" name="generateDefaultTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3d1b8cf-8188-4bd9-8aad-f2c186dcca5c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4453527c-e520-467d-aaac-0eeb9759def2" name="prob" direction="In" isUnique="false">
+                  <elementDefinition Id="da8bd17d-e44e-450f-bbf4-7d8b7619729e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59c72156-cedb-430f-bd44-db86ccbb41c3" LastKnownName="Probability" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c85520df-a0f7-4ec6-a40f-b9042c253409" name="epsilon" direction="In" isUnique="false">
+                  <elementDefinition Id="1a248bb2-381e-49c3-994f-e62f9bad38fc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8c09a6b6-caa6-4379-ae69-bcc2a47243a4" direction="Return" isUnique="false">
+                  <elementDefinition Id="2c9bc381-e3e4-4f19-9776-8f21b9d763e8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="65d5eb70-6fe2-47b8-9f37-31a460356b94" name="Counterparty" isAbstract="false" isLeaf="false" cachedFullName="RiskAnalysisTool.Calculation::Counterparty">
+        <elementDefinition Id="8a67ed80-b46c-4d49-8699-e737bdcbe623" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="deb0454b-6459-472f-8127-23784e0480b6" name="Counterparty" isAbstract="false" isLeaf="false" cachedFullName="RiskAnalysisTool.Calculation::Counterparty">
+        <elementDefinition Id="8a67ed80-b46c-4d49-8699-e737bdcbe623" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4d9f73c1-9e15-4a8b-b28b-9928125d71e1" name="AT1PDefaultModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f2f5e9d4-a18e-491e-9c5f-0021373a3644" />
+        <suppliersInternal>
+          <interfaceRealization Id="2be61db4-dde7-47e5-a8f3-afc8bf28411c">
+            <interfaceMoniker Id="d0d89bf9-afa7-4fb0-9222-d7bc2bc37e2e" LastKnownName="DefaultModel" />
+            <elementDefinition Id="12d06874-f5e9-43a8-8e73-e3c30f08e6dd" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="addccbed-8f5a-449b-8032-1f929045cfc6" isSubstitutable="false">
+            <classMoniker Id="12280ec0-4a44-4f2f-8301-35993e257844" LastKnownName="CalibratedModel" />
+            <elementDefinition Id="cbea24c1-c2d5-44f0-aa85-bca7bb90d8c6" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="f75f1ad5-52cd-4ffa-aa52-f6aa42b4da65" name="H_V" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a287b96b-bba8-4de2-ab2f-8beac01597bf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+            </type_NamedElement>
+          </property>
+          <property Id="ddfd4208-3019-49c0-95e2-77747e6f5267" name="B" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8adf3b28-f733-4024-9199-616392bd7030" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7e7b8522-a7e7-4744-847b-3a1aae522ae2" name="defualtTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="47c64292-6b49-422b-9529-c98e78b13497" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6a094584-212e-4f60-85fa-a47d44068445" name="path" direction="In" isUnique="false">
+                  <elementDefinition Id="787c4b71-6280-4284-abf7-4a9dc5f47ba8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="981dc650-604d-463c-ba05-d75671285590" LastKnownName="Path" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1b920d34-470b-4aee-94d9-ac7ce5de2243" direction="Return" isUnique="false">
+                  <elementDefinition Id="911a1f10-fad4-4ab2-8bb3-c1be8f044aa0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0d171850-1f40-427f-9d49-63763213ef72" name="defaultProbability" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3eb3af91-64bc-4edc-9b57-84736e0b7dbc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8c0c1040-340c-4645-8b90-00f3e0c0af1f" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="a0dba710-94b2-4ff7-aff1-74160bdd9b67" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2800cac-2adf-48f5-94ff-d90bf764f473" direction="Return" isUnique="false">
+                  <elementDefinition Id="dd3cf918-ec8f-41c3-9709-3749815fc6b5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59c72156-cedb-430f-bd44-db86ccbb41c3" LastKnownName="Probability" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bc13cf51-01ad-4bfe-bd72-18bf80210acb" name="process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9ddc2d0a-7752-40fe-a8ad-2dc61ad155ec" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="93afe359-cff1-415e-8235-63d9ea0d5a32" direction="Return" isUnique="false">
+                  <elementDefinition Id="76e805c5-454f-486b-982e-440af32f1781" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3febb89-454e-47e3-a535-a4f70b17a5c9" LastKnownName="StochasticProcess1D" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="12280ec0-4a44-4f2f-8301-35993e257844" name="CalibratedModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="abe77727-f126-4f69-bde3-b0509762093a" />
+        <ownedOperationsInternal>
+          <operation Id="acf98d14-5314-4181-a28f-72e338d282a0" name="calibrate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="160c1bbb-cc10-4964-9803-d70340672a96" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="565f9cee-a0c5-40c1-b4c0-ec606c340613" name="..." direction="In" isUnique="false">
+                  <elementDefinition Id="6729ddfe-24fc-46a1-97a4-1ae361efa782" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="45333d6b-f32a-422e-acc1-b9dd8458b321" direction="Return">
+                  <elementDefinition Id="0372b002-f7dc-4a23-9c4e-80e863cf0d18" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="02bb046e-0ebb-45a9-9fa6-ce5183fcc12b" name="value" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="849b4bcd-d950-42b2-8054-7ccc1cb5f8f5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1ff29af6-92e7-4f27-bd73-362e9f5513f2" direction="Return" isUnique="false">
+                  <elementDefinition Id="242eb2a7-607a-4aeb-bc24-9590633893cb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b95ee604-8183-448f-b354-206c5e3c4790" name="..." direction="In" isUnique="false">
+                  <elementDefinition Id="688d9980-2d73-418b-a5eb-a0f01eb0c5d2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d0d89bf9-afa7-4fb0-9222-d7bc2bc37e2e" name="DefaultModel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43955693-f61c-4b0e-8615-2a0d118857e9" />
+        <ownedOperations>
+          <operation Id="bac25a78-cfb3-41af-9373-cdd67fe63687" name="defualtTime" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="67fa7b32-5e32-47e5-a8c4-097675c6e3cb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="54c16be4-947c-44a9-87b3-61c7e5edc92b" name="path" direction="In" isUnique="false">
+                  <elementDefinition Id="f11db8f5-a796-48b5-9bab-d72d1ec5b4e7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="981dc650-604d-463c-ba05-d75671285590" LastKnownName="Path" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="292e78fa-caff-47cb-80ee-0217463952dd" direction="Return" isUnique="false">
+                  <elementDefinition Id="2c191ce1-8d85-4276-87ec-6107f58b7270" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bfd3e42f-733c-4a0c-8fd8-f51d9f5b383b" name="defaultProbability" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bbd71bbc-5f82-4e1e-8f54-2e41717ba769" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3a3e3e75-b72f-41d8-a4c8-e7fe9bc1e003" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="03b6c9eb-c5d8-43e9-97ab-8cd8589b26b5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="772f6903-7acf-441d-ac2e-1cace3d24a94" direction="Return" isUnique="false">
+                  <elementDefinition Id="276d6df8-f884-4426-a769-5c9c35c7f9cc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59c72156-cedb-430f-bd44-db86ccbb41c3" LastKnownName="Probability" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b8b01162-8f24-4030-89bb-f3ae5026cfff" name="process" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38586f79-d2a6-4cc2-b9ae-2e3f9fa50d04" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f205d691-f6db-4f19-8716-2ea7466d4453" direction="Return" isUnique="false">
+                  <elementDefinition Id="1b58c6ca-f3d6-4f93-b07b-f85fe82a7f8a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3febb89-454e-47e3-a535-a4f70b17a5c9" LastKnownName="StochasticProcess1D" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="981dc650-604d-463c-ba05-d75671285590" name="Path" isAbstract="false" isLeaf="false" cachedFullName="Path">
+        <elementDefinition Id="e4057a2e-3cb5-47a9-b01f-bb44ddbfabc2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59c72156-cedb-430f-bd44-db86ccbb41c3" name="Probability" isAbstract="false" isLeaf="false" cachedFullName="Probability">
+        <elementDefinition Id="59f5cb31-3677-4475-887e-3f3c104b463f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f3febb89-454e-47e3-a535-a4f70b17a5c9" name="StochasticProcess1D" isAbstract="false" isLeaf="false" cachedFullName="StochasticProcess1D">
+        <elementDefinition Id="f61f28ad-a60b-4b9c-9f51-97b3bcaeab96" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="61826904-2c94-49ca-8eff-24db1e157dc7" name="CIRDefaultModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88d306a0-d173-453d-b657-bba4bcc585e3" />
+        <suppliersInternal>
+          <interfaceRealization Id="33f31fab-13d7-4f63-a66a-0d16b79ce561">
+            <interfaceMoniker Id="d0d89bf9-afa7-4fb0-9222-d7bc2bc37e2e" LastKnownName="DefaultModel" />
+            <elementDefinition Id="5d7a1a85-7a8f-4dfe-a56e-f6724676f28b" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="605f0f19-707b-4aa5-84ed-4ffbd66255e4" isSubstitutable="false">
+            <classMoniker Id="12280ec0-4a44-4f2f-8301-35993e257844" LastKnownName="CalibratedModel" />
+            <elementDefinition Id="7aaa9aca-c679-4912-beab-3b8c5c0f85a0" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="88501e7d-a13a-40fb-b5e7-1070601f5aea" name="r0" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6ee9a074-7873-490c-b39d-0b1e7d43f93c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+            </type_NamedElement>
+          </property>
+          <property Id="cc5a63c1-f49b-451a-93d9-39679979ac7a" name="k" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="afcd6025-26f4-4312-b99f-0df865cdeaa6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+            </type_NamedElement>
+          </property>
+          <property Id="1c2455cc-f34b-440d-b8e1-c3cce1cb5171" name="sigma" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86d5a649-681e-40fb-b0a4-68cc83420417" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7fe620da-d5ec-4deb-80f7-e5648904cbd9" LastKnownName="Volatility" />
+            </type_NamedElement>
+          </property>
+          <property Id="e6fd68df-d9f7-46c2-83f6-050317c1e7e4" name="theta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4088fa7f-dbcd-4572-89a5-6c21c894aca2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="223b7ce0-bda9-4512-a29c-9021416bb1cd" name="defualtTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="55c3a801-a3eb-4830-bd68-fdbb60cddc37" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98aad13b-e799-43e3-826e-24ea8eb38d0d" name="path" direction="In" isUnique="false">
+                  <elementDefinition Id="dabaceb7-7f51-4e55-bb06-7eb035ea2a6b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="981dc650-604d-463c-ba05-d75671285590" LastKnownName="Path" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cdfd19cd-ff5f-4073-9fa6-c2fe831af9d2" direction="Return" isUnique="false">
+                  <elementDefinition Id="b5c4edf0-4f8b-4543-b4d2-a7bef5799404" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4a872724-6a81-446f-a89c-91c2a71a6be0" name="defaultProbability" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3326a84b-cc1c-4193-808f-bb804e9960e6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="63152604-bf45-4764-b9e4-e928ba5b62e9" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="1e90c45e-832a-4b5f-bd17-18d1d5c9868b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="379a9316-feb9-4b3f-b136-14e8858aa227" direction="Return" isUnique="false">
+                  <elementDefinition Id="f916b18e-827f-4c77-a46a-bf5ef15af87f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59c72156-cedb-430f-bd44-db86ccbb41c3" LastKnownName="Probability" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6650e599-2e46-4096-84db-47eaa23014bf" name="process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b4114b71-57a4-416b-b250-7e905a15028c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c5c49ad6-e52f-4fcf-bc96-4b51622e861d" direction="Return" isUnique="false">
+                  <elementDefinition Id="bfbbfc98-7392-4543-9d5f-90595e3b42ec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3febb89-454e-47e3-a535-a4f70b17a5c9" LastKnownName="StochasticProcess1D" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0809d4c0-6e88-4db4-ab38-de7881e15c8b" name="DeterministicDefaultModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="44771581-f8e0-4b53-843e-dbb10e2cf8f6" />
+        <suppliersInternal>
+          <interfaceRealization Id="2dbb56e7-d5ac-4bd3-b483-be8340c34de6">
+            <interfaceMoniker Id="d0d89bf9-afa7-4fb0-9222-d7bc2bc37e2e" LastKnownName="DefaultModel" />
+            <elementDefinition Id="51dc3690-72b7-44b3-9229-3451614864b5" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="25fbe70e-a480-4e8b-ab08-e7403daab220" name="defualtTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4b36d86c-a3ff-4aff-964a-b3bd3351941b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e99d7d0e-0172-4f22-8644-095f94b97b70" name="path" direction="In" isUnique="false">
+                  <elementDefinition Id="39fbac2e-d3e1-4886-b5ea-7ea6c5218aac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="981dc650-604d-463c-ba05-d75671285590" LastKnownName="Path" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b5882e4-7ed6-4c73-84aa-24f1fb4d023b" direction="Return" isUnique="false">
+                  <elementDefinition Id="e6d81256-5921-4bbb-a6b5-c8a184b7aebd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c0be5c51-08c7-44ce-a35d-7f6c219f6af9" name="defaultProbability" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ec81587e-dcd1-48a4-81c4-3518def47145" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2de459cf-b2cc-4c0a-b744-fb207e351713" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="4c99db13-e524-4cfd-b5d5-c75e0c988ae4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="85883d06-78b6-47c7-9e6c-5686f58b4660" direction="Return" isUnique="false">
+                  <elementDefinition Id="09b8ee21-fdfa-4e06-8013-9465c28323f2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59c72156-cedb-430f-bd44-db86ccbb41c3" LastKnownName="Probability" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cfb13761-e3d7-4686-9e3d-c9d56df45fff" name="process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e194eb59-96c8-4e8f-82fa-aefa5823a5bf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c6931ee-bbb2-4d91-85b5-bb6b3cb874b0" direction="Return" isUnique="false">
+                  <elementDefinition Id="83c9f981-a558-4ce8-8e4a-9ac0a51bf431" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3febb89-454e-47e3-a535-a4f70b17a5c9" LastKnownName="StochasticProcess1D" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7a19d8fc-f122-408e-b6e6-4c08431559de" name="DefaultModel" isAbstract="false" isLeaf="false" cachedFullName="RiskAnalysisTool.Calculation::DefaultModel">
+        <elementDefinition Id="e4a4abb6-9ae0-4f8b-80bc-06971d57e76b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="81afd215-061c-45e9-969a-5401aa04b783" name="Real" isAbstract="false" isLeaf="false" cachedFullName="Real">
+        <elementDefinition Id="5c475925-8e1f-49d6-b4ed-1bcc83af0996" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="4e5971eb-a6cf-427f-b263-9e6728a1b6f7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b703fb0a-1fbc-4676-b46f-d7c45ff574f3" name="Date" isAbstract="false" isLeaf="false" cachedFullName="Date">
+        <elementDefinition Id="9a08b875-875d-4686-a870-63fcb541e07e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3c6b41b3-9c76-48f5-acf3-01f1a3635511" name="PricingEngine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c99e8ca8-5ef7-4fb4-84a9-cc4860202fc4" />
+        <ownedOperations>
+          <operation Id="f5efc007-e32c-4781-8ed9-4c46a9ac7559" name="calculate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fc3bca16-fc4e-4e2c-b42c-64045be7c363" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0724881d-d42e-451e-842f-0fa2d88c77a1" direction="Return" isUnique="false">
+                  <elementDefinition Id="9a6126fe-3c90-49bc-8087-19f576ca2c1d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="13203aa9-dc52-496d-a79b-3920e0ac59d1" name="reset" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a30b27f-8b5e-4c24-bdd4-9c3b4af439e0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="266e0123-d683-4c18-a8fc-118f28199512" direction="Return" isUnique="false">
+                  <elementDefinition Id="35f8827c-da8b-4896-aa29-688e778438fe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c4554653-3946-4490-b321-edd183b68362" name="Counterparty" isAbstract="false" isLeaf="false" cachedFullName="RiskAnalysisTool.Calculation::Counterparty">
+        <elementDefinition Id="8a67ed80-b46c-4d49-8699-e737bdcbe623" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5b87420f-0f51-44df-a544-f662adc43b38" name="INST" isAbstract="false" isLeaf="false" cachedFullName="INST">
+        <elementDefinition Id="e58fd6f9-a783-41ea-90b2-f426d8324eca" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="51f5bf76-8071-462d-8ae2-f903e36a7423" name="YieldTermStructure" isAbstract="false" isLeaf="false" cachedFullName="YieldTermStructure">
+        <elementDefinition Id="42e5b198-7c15-4f9f-ae35-6b6812c1f85e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0d438058-06a6-4854-958f-994a5c1d3066" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
+        <elementDefinition Id="2a75e1f2-9fdc-4739-bcb9-2905324e545f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fa675fab-3889-46ac-87dd-21d70fc90799" name="Instrument" isAbstract="false" isLeaf="false" cachedFullName="Modelling::Instrument" />
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4c63b07a-b137-4e6b-8c2a-933bfee4275a" name="UCVAEngine&lt;INST&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67b75127-18bf-43e2-9b01-935f9367b197" />
+        <generalsInternal>
+          <generalization Id="9970bfeb-36a1-4c6c-a8ef-cf35260b8cf3" isSubstitutable="false">
+            <classMoniker Id="13f0a6bf-d64c-4c33-a029-10921690090b" LastKnownName="INST::engine" />
+            <elementDefinition Id="7abfa488-6b25-402a-ac60-8faf83f8052e" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="72d943dd-2adf-4051-aec3-780141587172" parameters="" isLeaf="false">
+            <elementDefinition Id="c7a5eb7a-cc07-420e-a132-ec9b2afde2db" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="32e11c57-751d-4c9a-9c5b-63a541e98434">
+                <elementDefinition Id="fccbd938-fe9d-434c-94d4-241576f2ca0f" />
+                <ownedParameterableElement>
+                  <class Id="8eea1160-5fd3-4b7d-b04a-c1332457b5c3" name="INST" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="185c99c5-8732-4d39-bb35-780ea9034e6e" />
+                  </class>
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <referencedTypeMoniker Id="fa675fab-3889-46ac-87dd-21d70fc90799" LastKnownName="Instrument" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property Id="3761a527-8907-4f99-91b2-6aba04c0145e" name="issuer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="408b0aa2-87fa-40a3-a1e1-66b0ce903415" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c4554653-3946-4490-b321-edd183b68362" LastKnownName="Counterparty" />
+            </type_NamedElement>
+          </property>
+          <property Id="91e29299-b106-42cf-91eb-4cd4dded537a" name="instrument" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f3970469-9143-4bf0-8a29-5fe7638be71f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5b87420f-0f51-44df-a544-f662adc43b38" LastKnownName="INST" />
+            </type_NamedElement>
+          </property>
+          <property Id="626f0345-55ee-403e-b6b8-857b122bdaa6" name="discountCurve" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99eee242-f304-49c1-8dbc-51a6629572e8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="51f5bf76-8071-462d-8ae2-f903e36a7423" LastKnownName="YieldTermStructure" />
+            </type_NamedElement>
+          </property>
+          <property Id="7c577899-38bf-425f-a210-c2cfb221fe1a" name="endTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e173ae5c-9f25-4fd3-86af-470b78440e82" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0d438058-06a6-4854-958f-994a5c1d3066" LastKnownName="Time" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d489a3b2-d6d2-43f1-803f-5bdf51399339" name="calculate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01c286b0-8db7-42ab-b5b7-23e49e14e411" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="630957c6-16e2-4307-982d-a2fe8de5c79e" direction="Return" isUnique="false">
+                  <elementDefinition Id="10c6a143-6dfe-4e30-903c-1b293e45f1da" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="2140e30c-3cd8-40a6-9640-2c6a5e5bbb51" name="Counterparty" isAbstract="false" isLeaf="false" cachedFullName="RiskAnalysisTool.Calculation::Counterparty">
+        <elementDefinition Id="8a67ed80-b46c-4d49-8699-e737bdcbe623" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7ae274ad-338b-4ee6-8ed7-452174658629" name="INST" isAbstract="false" isLeaf="false" cachedFullName="INST">
+        <elementDefinition Id="e58fd6f9-a783-41ea-90b2-f426d8324eca" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2b19f6bf-b304-4584-bf91-eabf1c3e695d" name="YieldTermStructure" isAbstract="false" isLeaf="false" cachedFullName="YieldTermStructure">
+        <elementDefinition Id="42e5b198-7c15-4f9f-ae35-6b6812c1f85e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f65f0080-e4f4-48d4-8514-7deb11568428" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
+        <elementDefinition Id="2a75e1f2-9fdc-4739-bcb9-2905324e545f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9f9d7862-7f70-4ed1-a9a0-a11e118aad92" name="Instrument" isAbstract="false" isLeaf="false" cachedFullName="Modelling::Instrument" />
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="82aa119c-30a2-462d-b328-16e7c8d60648" name="CreditVaREngine&lt;INST&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="54198f66-6cee-4bed-9711-15bbc132df16" />
+        <generalsInternal>
+          <generalization Id="1845a9f9-5d3e-4df4-9c77-c4dc9c13a6fb" isSubstitutable="false">
+            <classMoniker Id="13f0a6bf-d64c-4c33-a029-10921690090b" LastKnownName="INST::engine" />
+            <elementDefinition Id="d5322f85-821a-4dd4-8e9c-62a1eb9b698a" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="ff209def-5f7a-4480-b4b4-99c6c943ba8c" parameters="" isLeaf="false">
+            <elementDefinition Id="a19b53f7-d7e2-44ec-9216-eb6bac40cef2" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="7d71d203-5d4b-4c61-b2de-242755da7ced">
+                <elementDefinition Id="31b952ba-979b-4282-8dda-76978b09435d" />
+                <ownedParameterableElement>
+                  <class Id="00d7c7e8-181d-41b9-9c22-39e1d2561b72" name="INST" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="c431122c-5404-4709-8aa7-973f4a9dc32e" />
+                  </class>
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <referencedTypeMoniker Id="9f9d7862-7f70-4ed1-a9a0-a11e118aad92" LastKnownName="Instrument" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property Id="fef4041d-43c2-43cd-ab85-d8f25b15e53d" name="issuer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2a0bba47-478b-43db-a8f9-6aafb92a74dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2140e30c-3cd8-40a6-9640-2c6a5e5bbb51" LastKnownName="Counterparty" />
+            </type_NamedElement>
+          </property>
+          <property Id="49d3bcfc-e6c2-4e19-8a4d-7848d91db213" name="instrument" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b157705f-6325-4826-9ac2-812d25dde7df" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7ae274ad-338b-4ee6-8ed7-452174658629" LastKnownName="INST" />
+            </type_NamedElement>
+          </property>
+          <property Id="3a9f22f8-013b-46c7-bb2a-19cf07a2ebf1" name="discountCurve" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b629a97-181e-49b2-a6b3-c808056022d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2b19f6bf-b304-4584-bf91-eabf1c3e695d" LastKnownName="YieldTermStructure" />
+            </type_NamedElement>
+          </property>
+          <property Id="ea3997ac-6feb-4cdb-88d7-e7f748bc804e" name="endTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7f2359d1-1785-4e00-9e0e-efda4388b156" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f65f0080-e4f4-48d4-8514-7deb11568428" LastKnownName="Time" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6d31f4a9-01b7-4c9e-a0a1-4d768985d6b6" name="calculate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="24e66808-44f4-4a71-b577-c7c696d7c856" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="66a4e010-7243-4528-8acb-8733e1559eab" direction="Return" isUnique="false">
+                  <elementDefinition Id="7720cefa-8cea-46fe-a7bd-f3ecd259f07d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a7b37180-7f4d-4fe3-9ac3-a542182b26cc" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="4e5971eb-a6cf-427f-b263-9e6728a1b6f7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="314a24bd-1fcf-4aaf-a220-9bb8b55b2636" name="Instrument" isAbstract="false" isLeaf="false" cachedFullName="Modelling::Instrument" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a12dc54a-38bd-48b7-97a2-5e212d93a50c" name="Instrument" isAbstract="false" isLeaf="false" cachedFullName="Modelling::Instrument" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cf09b89e-798a-4cd0-85ae-ac74f721b366" name="Instrument" isAbstract="false" isLeaf="false" cachedFullName="Modelling::Instrument" />
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="86d20405-78a7-414e-b995-f6ce3ed5ffe8" name="MCCreditVaREngine&lt;INST&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a421e443-8d21-47af-9bc5-cbdf8521fdd8" />
+        <generalsInternal>
+          <generalization Id="1b86556a-7a42-4b8b-ad87-2ad447845066" isSubstitutable="false">
+            <classMoniker Id="82aa119c-30a2-462d-b328-16e7c8d60648" LastKnownName="CreditVaREngine&lt;INST&gt;" />
+            <elementDefinition Id="8e7fc490-9bf3-40f9-83a8-9fdd7f1791f5" />
+          </generalization>
+          <generalization Id="039b03ab-0019-4289-bfa3-a9ffac05d783" isSubstitutable="false">
+            <classMoniker Id="b13e7327-eb96-465d-83ba-cb947cb8bd16" LastKnownName="MCSimulation&lt;MC, RNG, S&gt;" />
+            <elementDefinition Id="b5d4196f-f095-4efa-bdae-ad5bf12416b8" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="633f2ee4-52f1-4b1f-85ea-340d05304ed1" parameters="" isLeaf="false">
+            <elementDefinition Id="22d6bde3-b9ce-4cb8-8942-af938b230c7b" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="b302c69c-2e92-4571-aa8c-ae4072304533">
+                <elementDefinition Id="0c90141f-4c5b-417e-a83b-21b8bea8ab96" />
+                <ownedParameterableElement>
+                  <class Id="5a6fbc23-8d57-472c-a059-55f3c34bda2c" name="INST" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="cc1d4cb1-4f9d-414a-a7cf-68cb381e015f" />
+                  </class>
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <referencedTypeMoniker Id="314a24bd-1fcf-4aaf-a220-9bb8b55b2636" LastKnownName="Instrument" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedOperationsInternal>
+          <operation Id="4eaa7d46-1418-48c0-867f-1e64fa71e27f" name="calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d559d963-3f4c-42ac-be24-c9fac3501bf4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="86e10085-ea57-4c32-b9ea-f32f15c93603" direction="Return" isUnique="false">
+                  <elementDefinition Id="9daa8cb8-8c66-490d-84b0-886f1c094fdc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7b37180-7f4d-4fe3-9ac3-a542182b26cc" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4658e1c7-0813-4bb6-a0dc-4bc5db4aae16" name="pathPricer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="34b03f99-4d46-4782-bb65-4cdfe31780df" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b5622e8c-0e63-4cae-8e04-4b2f2008f863" direction="Return" isUnique="false">
+                  <elementDefinition Id="8aa3cb4c-ed32-4128-9879-2ea399c7aad2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59d28ee3-8be6-4fd7-a6a7-6bf4ea3319a8" LastKnownName="CreditVaRPathPricer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fe84c915-57c5-46de-b0ab-727fc5a207c8" name="MCUCVAEngine&lt;INST&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97db4658-dc13-4aba-bcfc-fbfcd6446a5b" />
+        <generalsInternal>
+          <generalization Id="1f494a1c-d035-4f09-8b83-a75574326c6c" isSubstitutable="false">
+            <classMoniker Id="4c63b07a-b137-4e6b-8c2a-933bfee4275a" LastKnownName="UCVAEngine&lt;INST&gt;" />
+            <elementDefinition Id="4363fe8e-f9e5-4d76-80d0-a126ea5e0402" />
+          </generalization>
+          <generalization Id="25817949-78e1-45db-83c4-731f7fd5d265" isSubstitutable="false">
+            <classMoniker Id="b13e7327-eb96-465d-83ba-cb947cb8bd16" LastKnownName="MCSimulation&lt;MC, RNG, S&gt;" />
+            <elementDefinition Id="f42bc006-e62c-497e-823c-105c50cc12b5" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="1d175d0e-e526-4cd0-89e3-7db9916919df" parameters="" isLeaf="false">
+            <elementDefinition Id="1b8a0c17-7368-4437-9f02-a76cd7c60a83" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="8e7b922d-7e69-495c-a203-c45ebf708a78">
+                <elementDefinition Id="60cbc75d-fa5b-4acf-af2c-134bc4504e25" />
+                <ownedParameterableElement>
+                  <class Id="770b3ee9-f260-446e-b413-f97cea513349" name="INST" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="91809bb7-d480-4dcc-95d1-64606ae005c5" />
+                  </class>
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <referencedTypeMoniker Id="a12dc54a-38bd-48b7-97a2-5e212d93a50c" LastKnownName="Instrument" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedOperationsInternal>
+          <operation Id="26e70c3b-70ee-49ca-b5ed-6e97aea63438" name="calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d17022e9-1642-474c-9a6e-a9f49a5e780b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="61c9f5a6-386d-44aa-8d2b-c12c01416504" direction="Return" isUnique="false">
+                  <elementDefinition Id="b7ef074a-6de7-42d0-ac6f-c63ade94a86c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7b37180-7f4d-4fe3-9ac3-a542182b26cc" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c4ed32c0-147f-45bb-982b-a16e8bf2650d" name="pathPricer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7441a352-b565-4354-ae15-6cebe7cbd5ae" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d6cd0962-1cea-4cc3-8617-75f948d77574" direction="Return" isUnique="false">
+                  <elementDefinition Id="061e4090-c0dd-42a2-b156-c05af4ee06a1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="16b0471d-cdf3-43db-9aa7-7e4bfffa854f" LastKnownName="UCVAPathPricer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07b60702-b8e6-422d-a4c3-2dec99f6ea30" name="MCBVAEngine&lt;INST&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="46db9537-04dd-4eea-87f3-551560bd9f72" />
+        <generalsInternal>
+          <generalization Id="faceabbd-b59c-4402-8560-20bde04e86fc" isSubstitutable="false">
+            <classMoniker Id="10efadca-6b12-4ac3-a63c-1fa2ebc18ba8" LastKnownName="BVAEngine&lt;INST&gt;" />
+            <elementDefinition Id="bb0a8721-de62-4090-a06c-aa3c877eda1b" />
+          </generalization>
+          <generalization Id="5cf37942-af84-4261-8a07-531e78963acf" isSubstitutable="false">
+            <classMoniker Id="b13e7327-eb96-465d-83ba-cb947cb8bd16" LastKnownName="MCSimulation&lt;MC, RNG, S&gt;" />
+            <elementDefinition Id="4c1c9b83-6fbd-4643-814e-af357314e964" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="e8fdea8c-4cce-4dae-b333-2f192c00fa87" parameters="" isLeaf="false">
+            <elementDefinition Id="1bcc3272-686a-4d5e-8651-dc7b79ee8477" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="23acf029-be43-4a92-a3ac-e38c8c1615f3">
+                <elementDefinition Id="0917adac-e755-46a4-bcdb-52466caebe55" />
+                <ownedParameterableElement>
+                  <class Id="330870a7-cf9a-4c87-9dca-fa7b03b8b3e2" name="INST" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="6de4c32f-1bcd-43d6-9695-26e4ce07a0e3" />
+                  </class>
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <referencedTypeMoniker Id="cf09b89e-798a-4cd0-85ae-ac74f721b366" LastKnownName="Instrument" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedOperationsInternal>
+          <operation Id="e5ae985c-f949-40de-aae7-c04cc2c76195" name="calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c578b405-196e-4ae9-a778-7c6bf50e3d15" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c49347a9-8a0a-4e7f-b62f-9e7be896686d" direction="Return" isUnique="false">
+                  <elementDefinition Id="3bce33f3-6a99-4e38-9608-66701e167c3b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7b37180-7f4d-4fe3-9ac3-a542182b26cc" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="74116abf-ea7c-467c-a417-3f0490d5b658" name="pathPricer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b2949294-e9a7-408e-b4a8-127050419d6e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2fbb08e5-52ea-4633-91dd-714cd7be240d" direction="Return" isUnique="false">
+                  <elementDefinition Id="238c1c6d-aab9-42fa-b575-766752dc38b6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="50ad8fd9-6f29-4062-8bf4-ab00953746af" LastKnownName="BVAPathPricer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="13f0a6bf-d64c-4c33-a029-10921690090b" name="INST::engine" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="80976b9a-9890-4d55-8326-34af56c1ebe6" />
+        <suppliersInternal>
+          <interfaceRealization Id="1aecb90d-7adc-445a-beb1-4300116bc62e">
+            <interfaceMoniker Id="3c6b41b3-9c76-48f5-acf3-01f1a3635511" LastKnownName="PricingEngine" />
+            <elementDefinition Id="6da1d66d-6f47-481a-8bc0-f410ede24060" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="a13da57d-5c93-419f-80ba-2560b2d490a5" name="calculate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b68f9615-1100-4b31-a0bd-20e79b0f5b9d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d8bff889-e1c9-45d2-a29e-ec310087751f" direction="Return" isUnique="false">
+                  <elementDefinition Id="a70396b4-bf7e-458a-8b8a-ed58a7cab7ec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="558005ee-2f7c-4770-986c-8a5ca2e82dba" name="reset" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="571eddba-7800-4b6f-83f6-d5c9582a67cc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4dbda378-a315-460f-8241-2211e324c65b" direction="Return" isUnique="false">
+                  <elementDefinition Id="87165636-80cd-4127-8dc9-d2ea1efd2cd8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e0c8b323-bf90-4526-bf0c-d784bea951b2" name="SimVanillaSwapUCVAEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7911e414-9a95-48f6-a708-37f7cd0474a8" />
+        <generalsInternal>
+          <generalization Id="f4f11187-805b-4437-9ec6-1adfe13535cb" isSubstitutable="false">
+            <classMoniker Id="4c63b07a-b137-4e6b-8c2a-933bfee4275a" LastKnownName="UCVAEngine&lt;INST&gt;" />
+            <elementDefinition Id="c476b815-d4b5-4d55-ab3d-64cb76c92943" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="c7233925-bc74-4e02-a767-84556aaf9eb8" name="calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="54620255-ab6e-4ead-b350-df1db9beeb6b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4f7211d0-e017-41c6-91c7-f88ca7219ba0" direction="Return" isUnique="false">
+                  <elementDefinition Id="eb78e576-90d2-4a03-8d06-0672d28d6235" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="446f5980-8f41-4f2a-afe8-1d5f714a1844" name="SimEquitySwapUCVAEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4d56479-7e46-4169-8e75-828daeed54cf" />
+        <generalsInternal>
+          <generalization Id="8d27b541-70a3-408a-a420-4bab663c82e6" isSubstitutable="false">
+            <classMoniker Id="4c63b07a-b137-4e6b-8c2a-933bfee4275a" LastKnownName="UCVAEngine&lt;INST&gt;" />
+            <elementDefinition Id="b1ee74c7-527d-4c2e-9feb-0da735633ea2" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="adbf26dd-8b45-4271-83c8-8d26b8a21eca" name="calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d786b15e-0469-4cc6-8c61-0339234d0325" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e539630e-2aa3-4c94-a35d-ac755f97e482" direction="Return" isUnique="false">
+                  <elementDefinition Id="1f74cb7c-4d71-4881-b703-ff572a198c14" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b13e7327-eb96-465d-83ba-cb947cb8bd16" name="MCSimulation&lt;MC, RNG, S&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4914bfe3-cda6-4f9d-af74-c0d048e94f98" />
+        <ownedOperationsInternal>
+          <operation Id="b7703ac2-5ace-4ba8-b932-492f3adac44b" name="pathPricer" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8e356b21-0d81-4e42-a49e-7d4046157d1a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5cedf378-7b52-4a79-acbc-ce6620c422d5" direction="Return" isUnique="false">
+                  <elementDefinition Id="46785ff5-cc65-46bf-be31-56fd9f117b2c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="aa475fbe-1f16-4f74-b29c-2f764e7f980c" LastKnownName="MC::path_pricer_type" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="aa475fbe-1f16-4f74-b29c-2f764e7f980c" name="MC::path_pricer_type" isAbstract="false" isLeaf="false" cachedFullName="MC::path_pricer_type">
+        <elementDefinition Id="6c003737-6ebb-4a8d-8c2c-3a3ad13b1afc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ec4c1357-fba5-49d5-bd3e-55108270d65e" name="SimCrossCurrencySwapUCVAEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="743c2536-77ff-4e90-9831-8aba581630fe" />
+        <generalsInternal>
+          <generalization Id="3280d86a-2ca1-4c53-b7d4-09fe557c7238" isSubstitutable="false">
+            <classMoniker Id="4c63b07a-b137-4e6b-8c2a-933bfee4275a" LastKnownName="UCVAEngine&lt;INST&gt;" />
+            <elementDefinition Id="bd54c552-5337-48c1-8442-c6e82835212f" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="6b12d22b-2bcb-4f57-8396-4cad9d471a9e" name="calculate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="278c6229-6724-48c9-b7fe-912bca237a36" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="434b95e0-cf76-47d7-bb44-447c2c0b135d" direction="Return" isUnique="false">
+                  <elementDefinition Id="f71defa8-5528-4d87-8785-b2f66ae0703a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="feb895b2-e5b6-46f3-b29c-63fac3d536e9" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="16b0471d-cdf3-43db-9aa7-7e4bfffa854f" name="UCVAPathPricer" isAbstract="false" isLeaf="false" cachedFullName="UCVAPathPricer">
+        <elementDefinition Id="0a4bd824-ac92-4700-a8e2-bce97ead4820" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="50ad8fd9-6f29-4062-8bf4-ab00953746af" name="BVAPathPricer" isAbstract="false" isLeaf="false" cachedFullName="BVAPathPricer">
+        <elementDefinition Id="fe74da89-8d1c-4fde-9d91-386b245b6082" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59d28ee3-8be6-4fd7-a6a7-6bf4ea3319a8" name="CreditVaRPathPricer" isAbstract="false" isLeaf="false" cachedFullName="CreditVaRPathPricer">
+        <elementDefinition Id="f54f7a5b-3887-400b-aaa8-5ff864c3453b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a6cf5b36-fc4b-43e6-a578-cbae338a69e2" name="MCExposureModel" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac1b5da0-7ff0-457d-8001-47ef53bc990b" />
+        <ownedAttributesInternal>
+          <property Id="99a878cb-acf7-41c8-b5ba-ebc51febcc5a" name="discountCurve" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="495cac67-a937-404e-82a1-0f0905f86759" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e417a54d-0b01-4f16-82c8-e0839e56f0ca" LastKnownName="YieldTermStrucuture" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="17ee0d0b-4bd3-43ce-8d1d-c80569e0e61e" name="exposure" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="861c1171-a767-41bc-be33-c0487866eb48" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a38b33f-d007-46ac-afb4-37b01d7aacc5" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="11e3606c-5b0b-4b9e-bdb5-e7a39431cc7d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de673844-404f-4f27-ae27-ee2972c8ddae" direction="Return" isUnique="false">
+                  <elementDefinition Id="bcd7afcd-f64c-47cf-9a89-93a64da1ee16" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e417a54d-0b01-4f16-82c8-e0839e56f0ca" name="YieldTermStrucuture" isAbstract="false" isLeaf="false" cachedFullName="YieldTermStrucuture">
+        <elementDefinition Id="d564eb7f-f354-4a53-ba08-25dbcd417c45" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2d61252a-a20a-45b4-bd20-ed54f9fa4902" name="VanillaSwapExposureModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a6ca442-e362-434d-b49b-fe22f1f64fe7" />
+        <generalsInternal>
+          <generalization Id="45c8c4d7-c474-4e03-9ddc-0740ef28c295" isSubstitutable="false">
+            <classMoniker Id="a6cf5b36-fc4b-43e6-a578-cbae338a69e2" LastKnownName="MCExposureModel" />
+            <elementDefinition Id="c6ff42bb-f1dc-48bf-8de3-31413390e441" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="7664d528-808d-4e25-8dc0-7b7c2361d10b" name="exposure" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ebbf6285-e4bf-4a48-a749-a79e38d2998f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0c648772-f139-49da-8445-53807218df5a" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="0308dd08-ccc6-41d8-bf09-0e877bd1802a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a7131aff-c249-44b2-b668-2abb85334bec" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7b358e0e-8760-45b7-96cc-2d2d67b0598c" direction="Return" isUnique="false">
+                  <elementDefinition Id="e6a72696-2928-483a-9995-8b460f13e05f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="81afd215-061c-45e9-969a-5401aa04b783" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="97c6ca5d-6ef3-4e1b-bc5d-654a16aa4865" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
+        <elementDefinition Id="2a75e1f2-9fdc-4739-bcb9-2905324e545f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5ce14082-e041-46ea-b5e5-b215ccd74060" name="Real" isAbstract="false" isLeaf="false" cachedFullName="Real">
+        <elementDefinition Id="5c475925-8e1f-49d6-b4ed-1bcc83af0996" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e59787f8-87b6-4eec-bc5b-ef85b34cbafa" name="CrossCurrencySwapExposureModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5ea206f4-e691-4158-bf70-e87477a3e86c" />
+        <generalsInternal>
+          <generalization Id="76bfebff-616b-430c-a2f5-1e65ece51ae0" isSubstitutable="false">
+            <classMoniker Id="a6cf5b36-fc4b-43e6-a578-cbae338a69e2" LastKnownName="MCExposureModel" />
+            <elementDefinition Id="748561e0-1f37-44c3-93ea-85c3871ab6c8" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="c7bf7f4f-b709-451f-bdbb-53a19d749ca7" name="exposure" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="60340edf-dcc1-4f2d-954c-5112fe0470e0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f301e3fe-63f7-4f6f-a537-fc1fcd7243b3" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="1858a302-8d43-4f0d-b6f2-d33e337e79be" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97c6ca5d-6ef3-4e1b-bc5d-654a16aa4865" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e888927c-d8f9-4603-aca6-2dd0c3aeabb3" direction="Return" isUnique="false">
+                  <elementDefinition Id="76f3498d-0552-4221-b74d-31c4872874f5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5ce14082-e041-46ea-b5e5-b215ccd74060" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="40cda3c2-34f0-4c0f-b2a3-eb8e8929db9d" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
+        <elementDefinition Id="2a75e1f2-9fdc-4739-bcb9-2905324e545f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="80c3252b-1b1f-4028-b8fe-0cb71476c081" name="Real" isAbstract="false" isLeaf="false" cachedFullName="Real">
+        <elementDefinition Id="5c475925-8e1f-49d6-b4ed-1bcc83af0996" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="326e9d04-af39-40e3-b9d5-151c8a7ded33" name="EquitySwapExposureModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dc2f3f44-4490-41b1-b62d-0b6890eed2d4" />
+        <generalsInternal>
+          <generalization Id="8fefd563-3975-4425-8adf-5e1b94a9023d" isSubstitutable="false">
+            <classMoniker Id="a6cf5b36-fc4b-43e6-a578-cbae338a69e2" LastKnownName="MCExposureModel" />
+            <elementDefinition Id="4ef260ae-f63a-4946-820d-644d6be706dd" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="9de5a195-087e-4c5d-b2c7-b2c45f4de611" name="exposure" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a2f5f23-2d3e-4840-86d3-8eb1f5ee9503" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ecc9e848-d16c-4c14-8b36-e378b943bc0b" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="352eb6a0-e081-4d7b-94c0-6662c53b7ef0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="40cda3c2-34f0-4c0f-b2a3-eb8e8929db9d" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7d67ce86-d157-4da3-a8a1-da382983e7ab" direction="Return" isUnique="false">
+                  <elementDefinition Id="d138ad96-8cd4-40c2-b6f1-71bc77ee5661" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="80c3252b-1b1f-4028-b8fe-0cb71476c081" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6fe4bca9-0cac-4f63-b1d5-8ab15561672f" name="Time" isAbstract="false" isLeaf="false" cachedFullName="Time">
+        <elementDefinition Id="2a75e1f2-9fdc-4739-bcb9-2905324e545f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="15174a6e-7f6d-4fb7-87fe-4d4bb3c0099e" name="Real" isAbstract="false" isLeaf="false" cachedFullName="Real">
+        <elementDefinition Id="5c475925-8e1f-49d6-b4ed-1bcc83af0996" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3dd718e9-51f7-4f88-b643-661ad02115ee" name="PortfolioExposureModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="60c14b42-41ce-419e-b583-89cca5c5a7a4" />
+        <generalsInternal>
+          <generalization Id="d4246eab-edba-4039-bb77-282be1a4e814" isSubstitutable="false">
+            <classMoniker Id="a6cf5b36-fc4b-43e6-a578-cbae338a69e2" LastKnownName="MCExposureModel" />
+            <elementDefinition Id="9ee1d5a1-ec1b-4a24-9d79-b34da8aa0117" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="aeb5d928-0551-4b0b-bc49-08e99ea01b57" name="instruments" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8d10afb-7a6c-4c31-8a83-155337aca807" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c9afc5a-0b7f-4391-9099-795dc554bf80" LastKnownName="vector&lt;Instrument&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e86fa75f-f046-4fae-9777-b95d6bd0f509" name="exposure" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f2b71519-09e3-4e8b-93b1-cce6e7d3f18c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1a387a83-76b5-4397-b28f-72d0077aae5f" name="time" direction="In" isUnique="false">
+                  <elementDefinition Id="baf5f8de-e667-4ea7-a16c-e648bbd2ab30" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6fe4bca9-0cac-4f63-b1d5-8ab15561672f" LastKnownName="Time" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="997bc52c-3c1c-4a94-98f2-2f7ad2b48b69" direction="Return" isUnique="false">
+                  <elementDefinition Id="2748dfc6-b9e3-44ec-ac84-2783c69767c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="15174a6e-7f6d-4fb7-87fe-4d4bb3c0099e" LastKnownName="Real" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="9c9afc5a-0b7f-4391-9099-795dc554bf80" name="vector&lt;Instrument&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;Instrument&gt;">
+        <elementDefinition Id="eaf962a6-b62a-42f4-9933-c27eac296827" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7fe620da-d5ec-4deb-80f7-e5648904cbd9" name="Volatility" isAbstract="false" isLeaf="false" cachedFullName="Volatility">
+        <elementDefinition Id="d196d4e9-1e4e-4fc1-a8ad-44c2ea5e0f66" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="21aabf56-578c-4d89-8070-39d80444fe42" name="RiskAnalysisTool.Calculation">
+    <elementDefinition Id="0dd9e31b-4ade-4395-912f-e1cdad6f06f0" />
+    <profileInstances>
+      <packageHasProfileInstances Id="aa7e9f13-6573-4ad7-8821-1bf676139949">
+        <profileInstance Id="3edcfbab-46d6-4bb3-9695-4223517633b5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8e3f1474-c318-44fe-886e-3d9fa6d0146a">
+        <profileInstance Id="fbf20a0e-594e-4627-a5f2-54d4f627434c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b5ce0cb6-cc2e-486e-bdf6-436fa1ea9704">
+        <profileInstance Id="aa2b3828-e0e8-457e-9f3d-a0123d01ddf5" name="TextTemplateBindings">
+          <elementDefinition Id="485fb923-375f-42de-b301-cbfb63c37a4a" />
+        </profileInstance>
+        <elementDefinition Id="990019a9-96bc-4fb6-ae43-a811c25e3e9f" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

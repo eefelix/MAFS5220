@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:vm="clr-namespace:RiskAnalysisTool.MobileApp.ViewModels;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:labs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:conv="clr-namespace:RiskAnalysisTool.MobileApp.Converters;assembly=RiskAnalysisTool.MobileApp"
+             x:Class="RiskAnalysisTool.MobileApp.Views.PortfolioView"
+             Title="Portfolio">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <conv:InstrumentSummaryConverter x:Key="InstrumentSummaryConverter" />
+      <conv:InstrumentTitleConverter x:Key="InstrumentTitleConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ScrollView>
+    <StackLayout Orientation="Vertical">
+      <ListView ItemsSource="{Binding Instruments}" 
+                ItemTapped="OnListItemTapped" ItemSelected="OnListItemSelected">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding ., Converter={StaticResource InstrumentTitleConverter}}"
+                      Detail="{Binding ., Converter={StaticResource InstrumentSummaryConverter}}">
+              <TextCell.ContextActions>
+                <MenuItem Text="Edit"
+                          Clicked="OnEditButtonClicked" CommandParameter="{Binding .}"  />
+                <MenuItem Text="Delete" IsDestructive="True"
+                          Clicked="OnDeleteButtonClicked" CommandParameter="{Binding .}" />
+              </TextCell.ContextActions>
+            </TextCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      <Button Text="Add" Clicked="OnAddButtonClicked" />
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

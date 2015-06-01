@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="RiskAnalysisTool" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="RiskAnalysisTool.WebApp">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="test" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDHbsnWdg3KiQdEQ1g7TOUswDQYJKoZIhvcNAQEBBQAEggEAqP7AUARO0mHsXfLjKKtX7mVLqUiZTrHflK/rw4digBst4g2UtMFhjmZBMO+CwomqvHWztaHsTw4v2qFKZOzPv8Uh98MDpc/US8L4J6Jdl/Pz/YPRgEXlAH8Pd4QV05LaO+01M4TNqUbec+XnnsbtPGUNEV2lP7uOdnd00nDA3ECv9N7rZQfprdkFbIjFqN6eo+ybMQZFTSpYvWJnW2Gq7WsGqwLd+xNTDUZOPRDKrqsejx2KLWKY3HRMqrfI4PrWmp5SM2Ym+fUjmVj0a1gHH+5YeAeCaaAIjIPZiiY68r3g13c30yxynKz0T+pUbqMfqFTqfpifWPhsRoaUIslELjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECH0/74NT57f/gBAXnuK8MpAeNDTnHuSOV2SQ" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-01-07T23:59:59.0000000+08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="StorageAccount" value="DefaultEndpointsProtocol=https;AccountName=riskanalysistoolstorage;AccountKey=TlqopbhhNdlYHKMqgSXG1BghbHyR9S9VfrorOHZfw9sdRtsmAW9F2BvFtJhwWO/yvzS/iLPguM3TWZEker1SNw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="C01C904CE097F95C488A0ACB7A414D706FE22F04" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="RiskAnalysisTool.Worker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="test" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDHbsnWdg3KiQdEQ1g7TOUswDQYJKoZIhvcNAQEBBQAEggEAqP7AUARO0mHsXfLjKKtX7mVLqUiZTrHflK/rw4digBst4g2UtMFhjmZBMO+CwomqvHWztaHsTw4v2qFKZOzPv8Uh98MDpc/US8L4J6Jdl/Pz/YPRgEXlAH8Pd4QV05LaO+01M4TNqUbec+XnnsbtPGUNEV2lP7uOdnd00nDA3ECv9N7rZQfprdkFbIjFqN6eo+ybMQZFTSpYvWJnW2Gq7WsGqwLd+xNTDUZOPRDKrqsejx2KLWKY3HRMqrfI4PrWmp5SM2Ym+fUjmVj0a1gHH+5YeAeCaaAIjIPZiiY68r3g13c30yxynKz0T+pUbqMfqFTqfpifWPhsRoaUIslELjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECH0/74NT57f/gBAXnuK8MpAeNDTnHuSOV2SQ" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-01-07T23:59:59.0000000+08:00" />
+      <Setting name="TaskStorage" value="DefaultEndpointsProtocol=https;AccountName=riskanalysistoolstorage;AccountKey=TlqopbhhNdlYHKMqgSXG1BghbHyR9S9VfrorOHZfw9sdRtsmAW9F2BvFtJhwWO/yvzS/iLPguM3TWZEker1SNw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="C01C904CE097F95C488A0ACB7A414D706FE22F04" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

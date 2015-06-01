@@ -1,0 +1,18 @@
+﻿<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             x:Class="RiskAnalysisTool.MobileApp.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <Style x:Key="EntryLabelText" TargetType="Label" BaseResourceKey="BodyStyle">
+        <Setter Property="XAlign" Value="Start" />
+        <Setter Property="YAlign" Value="Center" />
+        <Setter Property="WidthRequest" Value="100" />
+      </Style>
+      <Style x:Key="EntryStackLayout" TargetType="StackLayout">
+        <Setter Property="Padding" Value="12,0,12,0" />
+        <Setter Property="Orientation" Value="Horizontal" />
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

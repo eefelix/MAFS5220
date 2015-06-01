@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f00d0073-f1dd-4dc6-a5a3-0e33d608f4be}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Modelling</Name>
+    <RootNamespace>Modelling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="RiskAnalysisTool.Calculation.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RiskAnalysisTool.Calculation.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>RiskAnalysisTool.Calculation.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Modelling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RiskAnalysisTool.Calculation\RiskAnalysisTool.Calculation.vcxproj">
+      <Name>RiskAnalysisTool.Calculation</Name>
+      <Project>{4583eae0-9f7f-4386-958c-7839126ca70a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RiskAnalysisTool.Common\RiskAnalysisTool.Common.csproj">
+      <Name>RiskAnalysisTool.Common</Name>
+      <Project>{ad3502f3-dac9-442e-979e-bbc1315e54b9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

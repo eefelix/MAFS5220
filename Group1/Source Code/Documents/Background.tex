@@ -1,0 +1,55 @@
+\section{Background}\label{sec:background}
+
+For better understanding of the document and our project for those who has no background knowledge about counterparty risk and CVA family adjustment, we introduce the necessary background knowledge for better understanding the remaining parts of the document, including the basis of counterparty credit risk and various adjustments like CVA, DVA and FVA.
+
+\subsection{Counterparty Risk for Derivative Transactions}
+The counterparty risk means the risk to each party of a contract that the counterparty will not live up to its contractual obligations. Counterparty risk as a risk to both parties and should be considered when evaluating a contract.
+
+Assessing the credit risk for a derivatives transaction is much more complicated than assessing the credit risk for a loan because the future exposure (i.e., the amount that could be lost in the event of a default) is not known. Derivatives that trade on exchanges entail very little credit risk because exchange stands between the two parties and has strict rules on the margin to be posted by each side.
+
+\subsection{Definition of Exposures}
+
+\begin{definition}[Exposure at time $t$]
+For a position with final maturity $T$ and whose discounted and added random cash flows at time $t < T$ are denoted by $\Pi(t,T)$, the exposure at time $t$ is defined as
+$$ Ex(t)= \mathbb{E}_t^Q[\Pi(t,T)^+] $$
+\end{definition}
+
+\begin{definition}[Exposure at time $t$ with sign]
+For a position with final maturity $T$ and whose discounted and added random cash flows at time $t < T$ are denoted by $\Pi(t,T)$, the exposure at time $t$ with sign is defined as
+$$ Exs(t)= \mathbb{E}_t^Q[\Pi(t,T)] $$
+\end{definition}
+
+\begin{definition}[Expected exposure at time $t$]
+For a position with final maturity $T$ and whose discounted and added random cash flows at time $t < T$ are denoted by $\Pi(t,T)$, the expected exposure at time $t$ is defined as
+$$ EEx(t)= \mathbb{E}_t^P[Ex(t)]=\mathbb{E}_t^P[\mathbb{E}_t^Q[\Pi(t,T)]^+] $$
+Please note that the outer expectation is taken under the physical measure.
+\end{definition}
+
+
+\begin{definition}[Exposure at default]
+The expected exposure at default is simply the exposure at default time $\tau$
+$$ EAD = Ex(\tau)= \mathbb{E}_t^Q[\Pi(t,T)]^+ $$
+Please note that the outer expectation is taken under the physical measure.
+\end{definition}
+
+\subsection{CVA, DVA and FVA}
+
+CVA family charges, including Credit Value Adjustment (CVA), Debt Value Adjustment (DVA), and Bilateral Value Adjustment which is the difference of CVA and DVA. If we consider funding cost, we will adjust the BVA with Funding Value Adjustment, which is the Total Value Adjustment (TVA). The adjustment is then added into the default-free price of the contract to reflect the counterparty credit risk charge.
+
+CVA is defined as the difference between the value of a position traded with a default-free counterparty and the value of the same position when traded with a given counterparty. If we assume the investor to be default-free, the CVA is called unilateral CVA (UCVA).
+
+\begin{definition}[Unilateral CVA]
+$$ UCVA = \mathbb{E}_0^Q[(1-REC)D(0,\tau)\mathbf{1}_{\{\tau<T\}}Ex(\tau)] $$
+\end{definition}
+
+If we assume both parties can default, we can default bilateral Counterparty Credit Risk, Debt Value Adjustment (DVA), and Bilateral Value Adjustment (BVA)
+
+\begin{definition}[Bilateral CVA and DVA]
+$$ CVA=\mathbb{E}_0^Q[(1-REC)D(0,\tau)\mathbf{1}_{\{\tau_{1st}=\tau_C<T\}}Ex(\tau)^+] $$
+$$ DVA=\mathbb{E}_0^Q[(1-REC)D(0,\tau)\mathbf{1}_{\{\tau_{1st}=\tau_B<T\}}Ex(\tau)^-] $$
+\end{definition}
+
+According to \cite{brigobook}, the FVA is because funding the hedging of the derivative cannot be done by using a single risk-free rate. We cannot compute it independently and then add it to the default-free price due to the recursive nature of FVA - the hedging depends on the valuation and the valuation is derived from the hedging. 
+
+Then we could adjust the price of the contract relative to the default-free price
+$$ \bar{V} = V-CVA+DVA+FVA $$

@@ -1,0 +1,37 @@
+\section{Implementation}\label{sec:implementation}
+
+In this section, we discuss some high-level details of our project implementation, including some traps and pitfalls that we encountered during the implementation process.
+
+\subsection{Libraries and Frameworks}
+
+The computing engine, which is most fundamental part, is based on the QuantLib\cite{quantlib}. We try to make our implementation conform with the other parts of QuantLib so it can be integrated. The compute engine exposes its feature using ASP.NET MVC WebAPI framework to create RESTful services via HTTP protocol.
+
+The mobile application is created using Xamarin\cite{xamarin} framework for supporting different platforms. Although at current stage we only support Android, we do have plan to bring it to other major platforms supported by Xamarin, like iOS and Windows Phone. The mobile application let the users input the data necessary for do the computation, then it calls the compute engine via the Web API interface, and when the compute engine finishes the task, the mobile application will show users the compute results (or the error message if the computation is failed).
+
+\subsection{Design of IRS BVA pricing engine}
+
+In the BVA Calculation under Monte Carlo simulation framework, we use defaultNPV method to calculate the NPV at default time $\tau$, say $NPV(\tau)$. Only this method need be specified using on the corresponding instrument in our simulation, given default time $\tau$ and underlying processes as the parameters. However, when it comes to the BVA calculation of vanilla swap under Black model, the default NPV method is not compatible well.
+
+Because under Black model, we treat $(NPV(\tau))^+$ and $(-NPV(\tau))^+$ as a swaption and do swaption pricing, then we could not simply use this method since the default information is not available for the method. In order to use the simulation framework for BVA calculation, we need add more parameters.
+
+Fortunately, in the UCVA Calculation under Monte Carlo simulation framework, we can work around it exactly, since only the counterparty can default and the investor is risk-free under the Unilateral Default Assumption.
+
+\subsection{Stochastic short-rate yield term structure}
+
+We know that the formula of zero coupon bond price under short-rate model is
+$$P(t,T)=E_t[-\mathrm{e}^{\int_t^T-r_u\mathrm{d}u}]$$
+What's more, if there is analytic solution for above formula, we say the corresponding short-rate model is affine. Otherwise, we should calculate the solution using some numerical method.
+$$P(t,T)=\mathrm{e}^{a(t,T)-b(t,T)r_t}$$
+Since we only use one-factor affine model to describe short rate so far, we construct the stochastic short-rate yield term structure based on the analytic solution of zero coupon bond price.
+
+\subsection{Equit Swap}
+
+For the base swap class, it has a protected constructor, which can be used by derived classes to specify the number of legs of the swap.
+There is a ¡°Legs\_¡± member, where we can placed all calculated cash flows. Normally, we should calculate all the future cash flow when constructing the swap.
+
+\subsection{AT1P Calibration}
+
+Under the AT1P model, the volatility depends on the time. When we use the ¡°BlackVol¡± function of ¡°BlackScholesMertonProcess¡± to return the volatility, we implicitly call the ¡°localvolatility¡± function of the same class. This ¡°localvolatility¡± function is used to calculate the time-depend volatility, contingent on the type of volatility term structure. In order for the result to be correct, we should take care of the input. Namely, the ¡°getVolTermStructure¡± function of AT1P should return the monotone increasing variance structure for later calculation. Also the interpolation method used in the base class ¡°defaultmodel¡± may affect the result of the AT1P model calibration, even though the difference is not wild.
+
+
+

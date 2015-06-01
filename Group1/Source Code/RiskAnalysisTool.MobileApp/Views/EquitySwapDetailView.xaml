@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:RiskAnalysisTool.MobileApp.Views;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:vm="clr-namespace:RiskAnalysisTool.MobileApp.ViewModels;assembly=RiskAnalysisTool.MobileApp"
+             xmlns:labs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="RiskAnalysisTool.MobileApp.Views.EquitySwapDetailView"
+             Title="Equity Swap">
+    <ContentPage.ToolbarItems>
+       <ToolbarItem Order="Primary" Priority="0" Text="Save" Command="{Binding SaveCommand}" />
+    </ContentPage.ToolbarItems>
+
+  <TableView Intent="Form">
+    <TableSection Title="Swap Term">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Start:" />
+          <DatePicker HorizontalOptions="FillAndExpand" Date="{Binding StartDate}" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Maturity:" />
+          <DatePicker HorizontalOptions="FillAndExpand" Date="{Binding MaturityDate}" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Pay Equity" />
+          <Switch HorizontalOptions="EndAndExpand" IsToggled="{Binding IsPayEquity}" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+    <TableSection Title="Rate Leg">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Rate:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding FixedRate}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Frequency (months):" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding FixedFrequency}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+    <TableSection Title="Equity Leg">
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Equity Symbol:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding EquitySymbol}" Keyboard="Text" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Inititial Price:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding SwapPrice}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Number of Shares:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding NumberOfShares}" Keyboard="Text" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Volatility:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding Volatility}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Dividend:" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding DividendYield}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+      <ViewCell>
+        <StackLayout Style="{StaticResource EntryStackLayout}">
+          <Label Style="{StaticResource EntryLabelText}" Text="Frequency (months):" />
+          <Entry HorizontalOptions="FillAndExpand" Text="{Binding EquityFrequency}" Keyboard="Numeric" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+
+  </TableView>
+</ContentPage>

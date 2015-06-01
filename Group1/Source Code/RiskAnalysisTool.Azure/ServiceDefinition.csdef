@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="RiskAnalysisTool" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WebRole name="RiskAnalysisTool.WebApp" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="HttpBinding" endpointName="HttpEndpoint" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="HttpEndpoint" protocol="http" port="80" />
+    </Endpoints>
+    <Startup>
+      <Task commandLine="InstallVCRedist.bat" executionContext="elevated" taskType="simple" />
+    </Startup>
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageAccount" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+  </WebRole>
+  <WorkerRole name="RiskAnalysisTool.Worker" vmsize="Small">
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="TaskStorage" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>

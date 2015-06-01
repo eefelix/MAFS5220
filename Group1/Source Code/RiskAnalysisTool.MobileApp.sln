@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RiskAnalysisTool.MobileApp", "RiskAnalysisTool.MobileApp\RiskAnalysisTool.MobileApp.shproj", "{B04528DE-F756-4790-A7AE-30C0637382DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskAnalysisTool.MobileApp.UnitTests", "RiskAnalysisTool.MobileApp.UnitTests\RiskAnalysisTool.MobileApp.UnitTests.csproj", "{2146843D-49E5-49FE-9B51-BAA46ADACE9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskAnalysisTool.MobileApp.Android", "RiskAnalysisTool.MobileApp.Android\RiskAnalysisTool.MobileApp.Android.csproj", "{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskAnalysisTool.Common", "RiskAnalysisTool.Common\RiskAnalysisTool.Common.csproj", "{AD3502F3-DAC9-442E-979E-BBC1315E54B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskAnalysisTool.MobileApp.iOS", "RiskAnalysisTool.MobileApp.iOS\RiskAnalysisTool.MobileApp.iOS.csproj", "{B7E4238F-E83A-4F20-A0B0-478F32E706AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskAnalysisTool.MobileApp.Windows", "RiskAnalysisTool.MobileApp.Windows\RiskAnalysisTool.MobileApp.Windows.csproj", "{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskAnalysisTool.MobileApp.Playground", "RiskAnalysisTool.MobileApp.Playground\RiskAnalysisTool.MobileApp.Playground.csproj", "{0D1FE306-491F-4ADB-BD13-F60C52470383}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RiskAnalysisTool.MobileApp\RiskAnalysisTool.MobileApp.projitems*{25ca673a-1120-4bb2-b4dd-fa8c1e61fb9d}*SharedItemsImports = 4
+		RiskAnalysisTool.MobileApp\RiskAnalysisTool.MobileApp.projitems*{2146843d-49e5-49fe-9b51-baa46adace9e}*SharedItemsImports = 4
+		RiskAnalysisTool.MobileApp\RiskAnalysisTool.MobileApp.projitems*{b04528de-f756-4790-a7ae-30c0637382db}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Profile|Any CPU = Profile|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2146843D-49E5-49FE-9B51-BAA46ADACE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2146843D-49E5-49FE-9B51-BAA46ADACE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2146843D-49E5-49FE-9B51-BAA46ADACE9E}.Profile|Any CPU.ActiveCfg = Profile|Any CPU
+		{2146843D-49E5-49FE-9B51-BAA46ADACE9E}.Profile|Any CPU.Build.0 = Profile|Any CPU
+		{2146843D-49E5-49FE-9B51-BAA46ADACE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2146843D-49E5-49FE-9B51-BAA46ADACE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Profile|Any CPU.ActiveCfg = Profile|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Profile|Any CPU.Build.0 = Profile|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Profile|Any CPU.Deploy.0 = Profile|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CA673A-1120-4BB2-B4DD-FA8C1E61FB9D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AD3502F3-DAC9-442E-979E-BBC1315E54B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3502F3-DAC9-442E-979E-BBC1315E54B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3502F3-DAC9-442E-979E-BBC1315E54B9}.Profile|Any CPU.ActiveCfg = Profile|Any CPU
+		{AD3502F3-DAC9-442E-979E-BBC1315E54B9}.Profile|Any CPU.Build.0 = Profile|Any CPU
+		{AD3502F3-DAC9-442E-979E-BBC1315E54B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3502F3-DAC9-442E-979E-BBC1315E54B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E4238F-E83A-4F20-A0B0-478F32E706AB}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{B7E4238F-E83A-4F20-A0B0-478F32E706AB}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{B7E4238F-E83A-4F20-A0B0-478F32E706AB}.Profile|Any CPU.ActiveCfg = Profile|iPhone
+		{B7E4238F-E83A-4F20-A0B0-478F32E706AB}.Profile|Any CPU.Build.0 = Profile|iPhone
+		{B7E4238F-E83A-4F20-A0B0-478F32E706AB}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{B7E4238F-E83A-4F20-A0B0-478F32E706AB}.Release|Any CPU.Build.0 = Release|iPhone
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Profile|Any CPU.ActiveCfg = Profile|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Profile|Any CPU.Build.0 = Profile|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Profile|Any CPU.Deploy.0 = Profile|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E549DA-D6D7-4FEC-9E2C-C650B0721DA8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0D1FE306-491F-4ADB-BD13-F60C52470383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1FE306-491F-4ADB-BD13-F60C52470383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1FE306-491F-4ADB-BD13-F60C52470383}.Profile|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1FE306-491F-4ADB-BD13-F60C52470383}.Profile|Any CPU.Build.0 = Release|Any CPU
+		{0D1FE306-491F-4ADB-BD13-F60C52470383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1FE306-491F-4ADB-BD13-F60C52470383}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

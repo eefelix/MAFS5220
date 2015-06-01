@@ -1,0 +1,42 @@
+\section{Project Scope}\label{sec:scope}
+
+In this project, we aim to compute the counterparty valuation adjustment (CFA, DVA) and funding valuation adjustment (FVA) for a portfolio with or without correlations. Due to the complexity of the derivative products, we make strict assumptions in order to limit the scope and efforts of our project.
+
+\subsection{Major Components}
+
+In general, our system is designed as two parts - a compute engine and a mobile application. The computing engine contains instruments, pricing engines, stochastic processes. The functionalities are exposed via RESTful web service. The mobile application is used to collect the user input, invoking the web service, and display the results to the user when the computation completes.
+
+Figure~\ref{fig:arch} represents the general architecture of the system, basically two parts - cloud service for compute engine and the mobile application
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{system_arch.pdf}
+  \caption{System Architecture}\label{fig:arch}
+\end{figure}
+
+
+\subsection{Products}
+
+We focus on handling a portfolio containing one or more \textit{Interest Rate Swap (IRS)}, \textit{Equity Swap} and \textit{Cross Currency Swap (CCS)} instruments.
+
+\textbf{Interest rate swap} is a contract in which two parties agree to exchange interest rate cash flows, based on a specified notional amount from a fixed rate to a floating rate (or vice versa) or from one floating rate to another. In this part, we only consider the most common type of interest rate swap: plain vanilla swap. It often exchanges a fixed payment for a floating payment, which is linked to an interest rate (most often the LIBOR plus a spread), with predefined exchange schedules under the same currency. In particular, the schedules of the two parties could not be the same.
+
+\textbf{Equity swap} is a contract to specify two parties exchange fixed rate coupon and equity dividends in the future. At the start, the payer side give a number of stocks to the receiver side, in exchange for the equivalent amount of dollar money from the receiver side; this amount is called the notional amount. Since the stocks have the value equal to the notional on the start date, there is in fact no change of value at the start. On every payment date before the maturity, the payer side pays the fixed rate coupon and receives the equity dividends cumulated in that period; while the receiver side pays the dividends and receives fixed rate coupon. At maturity, in addition to the coupon and dividends exchange, the notional and the stocks are also swaped back.
+
+\textbf{Cross currency swap} is a contract in which two parties exchange cumulative interest rate coupons dominated in different currencies. At the initiation, the frequency of payment and two fixed coupon rates are specified; also two parties exchange the notional dominated in different currency. Essentially, there is no upfront change of value at start. At intermediate payment dates, two parties exchange fixed rate coupons based on pre-determined interest rates. At maturity, the two parties exchange the nominal value back. Since the variability of exchange rate, the money paid by the two parties should have different worth at that time. In our project, cross currency swap is implemented as the fixed-fixed case which means the coupon rate paid by two legs are pre-defined at the beginning and will never change during the life of the contract.
+
+As we compute the value adjustments are a portfolio including the products discussed above. There could be correlation among the price movements of these products. We also allow correlations between product prices and the counterparty defaults, so wrong way risk (WWR) and right way risk (RWR) can be dealt with.
+
+\subsection{Counterparty Credit Valuation Adjustments}
+In our projects, we cover the computation of various counterparty credit valuation adjustment, including the unilateral CVA, bilateral CVA and DVA. We use risk-free close-out assumption in our entire implementation.
+
+We support computing unilateral CVA for a single IRS, Equity Swap or CCS instrument without Wrong Way Risk using analytic or synthetic solutions. For other cases, Monte Carlo method is adopt in computing all the valuation adjustments.
+
+\subsection{Funding Valuation Adjustment}
+
+According to \cite{brigobook}, the definition of FVA is not as straightforward as CVA or DVA, and we cannot compute it independently due to the recursive nature of FVA. We have to use American Monte Carlo if we adopt the method. 
+
+However, In our project, we plan to adopt a different way of computing FVA. According to \cite{hidde2014}, assuming that the local currency cash to be the only valid collateral, we can compute the FVA as follows
+$$ FVA=-\mathbb{E}_0^Q[\int_0^T{1_{\{\tau_{1st}>t\}} D(0,t) \gamma(t)(V(t,T)^+ + V(t,T)^-)} dt]$$
+where $V(t,T)$ is the exposure at time $t$. And this enables us to compute FVA using regular Monte Carlo method.
+

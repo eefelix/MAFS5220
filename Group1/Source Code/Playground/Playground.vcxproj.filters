@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ql\session.cpp">
+      <Filter>ql\patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\boost_system.error_code.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="boost">
+      <UniqueIdentifier>{7dfa3af4-1b87-4eab-aec3-fb27a3ccd618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql">
+      <UniqueIdentifier>{5d87e224-e236-4c5d-9c74-fd995537f26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Properties">
+      <UniqueIdentifier>{67f35f5b-efa1-4fc6-a1ff-dda16e3eb63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ql\patterns">
+      <UniqueIdentifier>{e1ef186d-33f0-4b50-b792-d3d534ee5e89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
